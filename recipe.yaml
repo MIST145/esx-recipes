@@ -198,8 +198,8 @@ tasks:
   ## Patching configs: esx-radio
   - action: replace_string
     file: ./resources/[standalone]/Renewed-Banking/config.lua
-    search: 'framework = "qb"'
-    replace: 'framework = "esx"'
+    search: 'framework = 'qb''
+    replace: 'framework = 'esx''
 
   ## SQL INSTALATION
   - action: query_database
