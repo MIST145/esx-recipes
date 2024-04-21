@@ -23,18 +23,25 @@ INSERT INTO `bank_accounts_new` (`id`, `amount`, `transactions`, `auth`, `isFroz
 	('triads', 0, '[]', '[]', 0, NULL);
 
 CREATE TABLE IF NOT EXISTS `player_transactions` (
-  `id` varchar(50) NOT NULL,
-  `isFrozen` int(11) DEFAULT 0,
-  `transactions` longtext DEFAULT '[]',
+   `id` varchar(50) NOT NULL,
+   `isFrozen` int(11) DEFAULT 0,
+   `transactions` longtext DEFAULT '[]',
   PRIMARY KEY (`id`)
 );
 
--- sna fuel
-ALTER TABLE `owned_vehicles`
-ADD COLUMN `datetimein` INT DEFAULT 0;
+-- CLEAR OWNED VEHICLE TABLE
+ALTER TABLE `owned_vehicles`,
+   DROP COLUMN IF EXISTS `owner`,
+   DROP COLUMN IF EXISTS `plate`,
+   DROP COLUMN IF EXISTS `vehicle`,
+   DROP COLUMN IF EXISTS `type`,
+   DROP COLUMN IF EXISTS `job`,
+   DROP COLUMN IF EXISTS `stored`,
+   DROP COLUMN IF EXISTS `parking`,
+   DROP COLUMN IF EXISTS `pound`;
 
 -- mono garage
-CREATE TABLE `owned_vehicles` (
+CREATE TABLE  `owned_vehicles` (
   `owner` varchar(60) DEFAULT NULL,
   `plate` varchar(12) NOT NULL,
   `vehicle` longtext DEFAULT NULL,
@@ -50,4 +57,8 @@ ALTER TABLE `owned_vehicles`
     ADD COLUMN `lastparking` longtext DEFAULT NULL,
     ADD COLUMN `friends` longtext DEFAULT NULL;
     ADD COLUMN `fakeplate` varchar(12) DEFAULT NULL,
+
+-- sna fuel
+ALTER TABLE `owned_vehicles`
+ADD COLUMN `datetimein` INT DEFAULT 0;
 
