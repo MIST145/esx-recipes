@@ -19,15 +19,15 @@ tasks:
     dest: ./gitbuild/recipe
 
   - action: move_path
-    src: ./tmp/recipe/server.cfg
+    src: ./gitbuild/recipe/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: ./tmp/recipe/ox.cfg
+    src: ./gitbuild/recipe/ox.cfg
     dest: ./ox.cfg
 
   - action: move_path
-    src: ./tmp/recipe/esxLogo.png
+    src: ./gitbuild/recipe/esxLogo.png
     dest: ./esxLogo.png
 
   # Download basic resources and ESX dependencies
@@ -213,7 +213,7 @@ tasks:
     file: ./tmp/core/[SQL]/legacy.sql
 
   #- action: query_database
-  #  file: ./tmp/recipe/extra.sql
+  #  file: ./gitbuild/recipe/extra.sql
 
   - action: waste_time # prevent github throttling
     seconds: 5
