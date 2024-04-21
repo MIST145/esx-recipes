@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `player_transactions` (
 );
 
 -- mono garage
-CREATE TABLE  `owned_vehicles` (
+CREATE TABLE IF NOT EXISTS  `owned_vehicles` (
   `owner` varchar(60) DEFAULT NULL,
   `plate` varchar(12) NOT NULL,
   `vehicle` longtext DEFAULT NULL,
