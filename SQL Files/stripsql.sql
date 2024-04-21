@@ -1,4 +1,6 @@
 
+DROP TABLE IF EXISTS `bankin`;
+
 -- CLEAR OWNED VEHICLE TABLE
 ALTER TABLE `owned_vehicles`
 DROP COLUMN IF EXISTS `owner`;
