@@ -180,26 +180,6 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
-  - action: download_github
-    src: https://github.com/Byte-Labs-Studio/bl_bridge
-    ref: main
-    dest: ./resources/[standalone]/bl_bridge
-
-  #- action: download_github
-  #  src: https://github.com/SOH69/mm_radio
-  #  ref: main
-  #  dest: ./resources/[standalone]/mm_radio
-
-  #- action: download_file
-  #  path: ./tmp/mm_radio.zip
-  #  url: https://github.com/SOH69/mm_radio/releases/download/v2.0.4/mm_radio.zip
-  #- action: unzip
-  #  dest: ./resources/[standalone]
-  #  src: ./tmp/mm_radio.zip
-  
-  #- action: waste_time # prevent github throttling
-  #  seconds: 5
-
   #- action: download_github
   #  src: https://github.com/DonStylz74/esx-sna-fuel
   #  ref: main
