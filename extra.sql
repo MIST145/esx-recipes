@@ -1,3 +1,4 @@
+-- Renewed Banking
 CREATE TABLE IF NOT EXISTS `bank_accounts_new` (
   `id` varchar(50) NOT NULL,
   `amount` int(11) DEFAULT 0,
@@ -28,5 +29,25 @@ CREATE TABLE IF NOT EXISTS `player_transactions` (
   PRIMARY KEY (`id`)
 );
 
+-- sna fuel
 ALTER TABLE `owned_vehicles`
 ADD COLUMN `datetimein` INT DEFAULT 0;
+
+-- mono garage
+CREATE TABLE `owned_vehicles` (
+  `owner` varchar(60) DEFAULT NULL,
+  `plate` varchar(12) NOT NULL,
+  `vehicle` longtext DEFAULT NULL,
+  `type` varchar(20) NOT NULL DEFAULT 'car',
+  `job` varchar(20) DEFAULT NULL,
+  `stored` tinyint(4) NOT NULL DEFAULT 0,
+  `parking` VARCHAR(60) DEFAULT NULL,
+  `pound` VARCHAR(60) DEFAULT NULL
+) ENGINE=InnoDB;
+
+ALTER TABLE `owned_vehicles`
+    ADD COLUMN `infoimpound` longtext DEFAULT NULL,
+    ADD COLUMN `lastparking` longtext DEFAULT NULL,
+    ADD COLUMN `friends` longtext DEFAULT NULL;
+    ADD COLUMN `fakeplate` varchar(12) DEFAULT NULL,
+
