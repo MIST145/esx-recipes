@@ -89,10 +89,10 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 5
 
-  - action: download_github
-    src: https://github.com/esx-framework/esx_property
-    ref: main
-    dest: ./tmp/addons/esx_property
+  #- action: download_github
+  #  src: https://github.com/esx-framework/esx_property
+  #  ref: main
+  #  dest: ./tmp/addons/esx_property
 
   - action: download_github
     src: https://github.com/esx-framework/esx_dmvschool
