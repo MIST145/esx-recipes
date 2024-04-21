@@ -1,5 +1,5 @@
 
-DROP TABLE IF EXISTS `bankin`;
+DROP TABLE IF EXISTS `banking`;
 
 -- CLEAR OWNED VEHICLE TABLE
 ALTER TABLE `owned_vehicles`
