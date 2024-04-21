@@ -212,14 +212,8 @@ tasks:
   - action: query_database
     file: ./tmp/core/[SQL]/legacy.sql
 
-  - action: query_database
-    file: ./tmp/recipe/strip.sql
-
-  - action: waste_time # prevent github throttling
-    seconds: 5
-
-  - action: query_database
-    file: ./tmp/recipe/extra.sql
+  #- action: query_database
+  #  file: ./tmp/recipe/extra.sql
 
   - action: waste_time # prevent github throttling
     seconds: 5
