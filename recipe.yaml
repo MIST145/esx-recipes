@@ -181,6 +181,14 @@ tasks:
     dest: ./resources/[standalone]/pma-voice
 
   - action: download_github
+    src: https://github.com/DonStylz74/mono_garage
+    ref: main
+    dest: ./resources/[addons]/mono_garage
+  
+  - action: waste_time # prevent github throttling
+    seconds: 5
+
+  - action: download_github
     src: https://github.com/DonStylz74/esx-sna-fuel
     ref: main
     dest: ./resources/[standalone]/esx-sna-fuel
