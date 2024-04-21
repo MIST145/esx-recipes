@@ -26,10 +26,6 @@ tasks:
     src: ./tmp/recipe/ox.cfg
     dest: ./ox.cfg
 
-  #- action: move_path
-  #  src: ./tmp/recipe/hud.cfg
-  #  dest: ./hud.cfg
-
   - action: move_path
     src: ./tmp/recipe/esxLogo.png
     dest: ./esxLogo.png
@@ -80,12 +76,6 @@ tasks:
     dest: ./tmp/addons
     src: ./tmp/files/esx_hud.zip
 
-  ## dx_hud
-  #- action: download_github
-  #  src: https://github.com/0xDEMXN/dx_hud
-  #  ref: main
-  #  dest: ./tmp/addons/dx_hud
-
   - action: download_github
     src: https://github.com/esx-framework/esx_clotheshop
     ref: main
@@ -113,16 +103,6 @@ tasks:
     src: https://github.com/esx-framework/esx_barbershop
     ref: main
     dest: ./tmp/addons/esx_barbershop
-
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_weaponshop
-  #  ref: main
-  #  dest: ./tmp/addons/esx_weaponshop
-
-  # - action: download_github
-  #  src: https://github.com/esx-framework/esx_shops
-  #  ref: main
-  #  dest: ./tmp/addons/esx_shops
 
   - action: download_github
     src: https://github.com/esx-framework/esx_taxijob
@@ -182,25 +162,10 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_mechanicjob
 
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_animations
-  #  ref: main
-  #  dest: ./tmp/addons/esx_animations
-
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_boat
-  #  ref: main
-  # dest: ./tmp/addons/esx_boat
-
   - action: download_github
     src: https://github.com/esx-framework/esx_status
     ref: main
     dest: ./tmp/addons/esx_status
-    
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_sit
-  #  ref: main
-  #  dest: ./tmp/addons/esx_sit
 
   - action: move_path
     src: ./tmp/core/[core]
@@ -215,10 +180,10 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
-  - action: download_github
-    src: https://github.com/Byte-Labs-Studio/bl_bridge
-    ref: main
-   dest: ./resources/[standalone]/bl_bridge
+  #- action: download_github
+  #  src: https://github.com/Byte-Labs-Studio/bl_bridge
+  #  ref: main
+  #  dest: ./resources/[standalone]/bl_bridge
 
   #- action: download_file
   #  path: ./tmp/mm_radio.zip
