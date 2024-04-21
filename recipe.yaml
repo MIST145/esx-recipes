@@ -188,18 +188,17 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 5
 
-  - action: download_file
-    path: ./tmp/Renewed-Banking.zip
-    url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/Renewed-Banking.zip
+  - action: download_github
+    src: https://github.com/DonStylz74/Renewed-Banking
+    ref: main
+    dest: ./resources/[standalone]/Renewed-Banking
 
-  ## Patching configs: esx-radio
-  - action: replace_string
-    file: ./resources/[standalone]/Renewed-Banking/config.lua
-    search: 'framework = 'qb''
-    replace: 'framework = 'esx''
+  #- action: download_file
+  #  path: ./tmp/Renewed-Banking.zip
+  #  url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
+  #- action: unzip
+  #  dest: ./resources/[standalone]
+  #  src: ./tmp/Renewed-Banking.zip
 
   ## SQL INSTALATION
   - action: query_database
