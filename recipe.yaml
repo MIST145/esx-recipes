@@ -185,10 +185,10 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/bl_bridge
 
-  - action: download_github
-    src: https://github.com/SOH69/mm_radio
-    ref: main
-    dest: ./resources/[standalone]/mm_radio
+  #- action: download_github
+  #  src: https://github.com/SOH69/mm_radio
+  #  ref: main
+  #  dest: ./resources/[standalone]/mm_radio
 
   #- action: download_file
   #  path: ./tmp/mm_radio.zip
