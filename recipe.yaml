@@ -180,10 +180,10 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
-  #- action: download_github
-  #  src: https://github.com/Byte-Labs-Studio/bl_bridge
-  #  ref: main
-  #  dest: ./resources/[standalone]/bl_bridge
+  - action: download_github
+    src: https://github.com/Byte-Labs-Studio/bl_bridge
+    ref: main
+    dest: ./resources/[standalone]/bl_bridge
 
   #- action: download_file
   #  path: ./tmp/mm_radio.zip
