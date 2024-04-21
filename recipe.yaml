@@ -53,12 +53,6 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_addonaccount
 
-  # Uncomment and correct the indentation if needed
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_addoninventory
-  #  ref: main
-  #  dest: ./tmp/addons/esx_addoninventory
-
   - action: download_github
     src: https://github.com/esx-framework/esx_datastore
     ref: main
@@ -74,34 +68,23 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_service
 
-  # Uncomment and correct the indentation if needed
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_rpchat
-  #  ref: main
-  #  dest: ./tmp/addons/esx_rpchat
-
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_cruisecontrol
-  #  ref: main
-  #  dest: ./tmp/addons/esx_cruisecontrol
-
   - action: download_github
     src: https://github.com/esx-framework/esx_basicneeds
     ref: main
     dest: ./tmp/addons/esx_basicneeds
 
-  #- action: download_file
-  #  path: ./tmp/files/esx_hud.zip
-  #  url: https://github.com/esx-framework/esx_hud/releases/latest/download/esx_hud.zip
-  #- action: unzip
-  #  dest: ./tmp/addons
-  #  src: ./tmp/files/esx_hud.zip
+  - action: download_file
+    path: ./tmp/files/esx_hud.zip
+    url: https://github.com/esx-framework/esx_hud/releases/latest/download/esx_hud.zip
+  - action: unzip
+    dest: ./tmp/addons
+    src: ./tmp/files/esx_hud.zip
 
   ## dx_hud
-  - action: download_github
-    src: https://github.com/0xDEMXN/dx_hud
-    ref: main
-    dest: ./tmp/addons/dx_hud
+  #- action: download_github
+  #  src: https://github.com/0xDEMXN/dx_hud
+  #  ref: main
+  #  dest: ./tmp/addons/dx_hud
 
   - action: download_github
     src: https://github.com/esx-framework/esx_clotheshop
@@ -116,10 +99,10 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 5
 
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_property
-  #  ref: main
-  #  dest: ./tmp/addons/esx_property
+  - action: download_github
+    src: https://github.com/esx-framework/esx_property
+    ref: main
+    dest: ./tmp/addons/esx_property
 
   - action: download_github
     src: https://github.com/esx-framework/esx_dmvschool
@@ -171,11 +154,6 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_joblisting
 
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_banking
-  #  ref: main
-  #  dest: ./tmp/addons/esx_banking
-
   - action: download_github
     src: https://github.com/esx-framework/esx_lscustom
     ref: main
@@ -204,10 +182,10 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_jobs
 
-  #- action: download_github
-  #  src: https://github.com/esx-framework/esx_ambulancejob
-  #  ref: main
-  #  dest: ./tmp/addons/esx_ambulancejob
+  - action: download_github
+    src: https://github.com/esx-framework/esx_ambulancejob
+    ref: main
+    dest: ./tmp/addons/esx_ambulancejob
 
   - action: download_github
     src: https://github.com/esx-framework/esx_mechanicjob
@@ -247,12 +225,12 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
-  - action: download_file
-    path: ./tmp/mm_radio.zip
-    url: https://github.com/SOH69/mm_radio/releases/latest/download/mm_radio.zip
-  - action: unzip
-    dest: ./resources/[standalone]
-    src: ./tmp/mm_radio.zip
+  #- action: download_file
+  #  path: ./tmp/mm_radio.zip
+  #  url: https://github.com/SOH69/mm_radio/releases/latest/download/mm_radio.zip
+  #- action: unzip
+  #  dest: ./resources/[standalone]
+  #  src: ./tmp/mm_radio.zip
   
   - action: waste_time # prevent github throttling
     seconds: 5
@@ -263,12 +241,8 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Banking.zip
-    
-  #- action: download_github
-  #  src: https://github.com/Benzo00/esx-radio
-  #  ref: main
-  #  dest: ./resources/[esx_addons]/esx-radio
 
+  ## SQL INSTALATION
   - action: query_database
     file: ./tmp/core/[SQL]/legacy.sql
 
