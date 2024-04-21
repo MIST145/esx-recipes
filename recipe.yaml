@@ -16,7 +16,7 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/esx-recipes
     ref: legacy
-    dest: ./tmp/recipe
+    dest: ./gitbuild/recipe
 
   - action: move_path
     src: ./tmp/recipe/server.cfg
