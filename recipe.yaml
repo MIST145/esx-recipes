@@ -16,18 +16,18 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/esx-recipes
     ref: legacy
-    dest: ./gitbuild/recipe
+    dest: ./recipe
 
   - action: move_path
-    src: ./gitbuild/recipe/server.cfg
+    src: ./recipe/server.cfg
     dest: ./server.cfg
 
   - action: move_path
-    src: ./gitbuild/recipe/ox.cfg
+    src: ./recipe/ox.cfg
     dest: ./ox.cfg
 
   - action: move_path
-    src: ./gitbuild/recipe/esxLogo.png
+    src: ./recipe/esxLogo.png
     dest: ./esxLogo.png
 
   # Download basic resources and ESX dependencies
