@@ -29,24 +29,6 @@ CREATE TABLE IF NOT EXISTS `player_transactions` (
   PRIMARY KEY (`id`)
 );
 
--- CLEAR OWNED VEHICLE TABLE
-ALTER TABLE `owned_vehicles`
-DROP COLUMN IF EXISTS `owner`;
-ALTER TABLE `owned_vehicles`
-DROP COLUMN IF EXISTS `plate`;
-ALTER TABLE `owned_vehicles`
-DROP COLUMN IF EXISTS `vehicle`;
-ALTER TABLE `owned_vehicles`
-DROP COLUMN IF EXISTS `type`;
-ALTER TABLE `owned_vehicles`
-DROP COLUMN IF EXISTS `job`;
-ALTER TABLE `owned_vehicles`
-DROP COLUMN IF EXISTS `stored`;
-ALTER TABLE `owned_vehicles`
-DROP COLUMN IF EXISTS `parking`;
-ALTER TABLE `owned_vehicles`
-DROP COLUMN IF EXISTS `pound`;
-
 -- mono garage
 CREATE TABLE  `owned_vehicles` (
   `owner` varchar(60) DEFAULT NULL,
@@ -67,5 +49,5 @@ ALTER TABLE `owned_vehicles`
 
 -- sna fuel
 ALTER TABLE `owned_vehicles`
-ADD COLUMN `datetimein` INT DEFAULT 0;
+   ADD COLUMN `datetimein` INT DEFAULT 0;
 
