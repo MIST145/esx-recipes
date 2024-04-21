@@ -180,10 +180,10 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
-  #- action: download_github
-  #  src: https://github.com/DonStylz74/esx-sna-fuel
-  #  ref: main
-  #  dest: ./resources/[standalone]/esx-sna-fuel
+  - action: download_github
+    src: https://github.com/DonStylz74/esx-sna-fuel
+    ref: main
+    dest: ./resources/[standalone]/esx-sna-fuel
   
   - action: waste_time # prevent github throttling
     seconds: 5
