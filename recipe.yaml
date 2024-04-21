@@ -195,6 +195,12 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Banking.zip
 
+  ## Patching configs: esx-radio
+  - action: replace_string
+    file: ./resources/[standalone]/Renewed-Banking/config.lua
+    search: 'framework = "qb"'
+    replace: 'framework = "esx"'
+
   ## SQL INSTALATION
   - action: query_database
     file: ./tmp/core/[SQL]/legacy.sql
