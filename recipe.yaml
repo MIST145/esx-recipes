@@ -195,6 +195,14 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 5
 
+  - action: download_github
+    src: https://github.com/DonStylz74/esx-sna-fuel
+    ref: main
+    dest: ./resources/[standalone]/esx-sna-fuel
+  
+  - action: waste_time # prevent github throttling
+    seconds: 5
+
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
     url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
