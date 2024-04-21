@@ -183,7 +183,7 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/mono_garage
     ref: main
-    dest: ./resources/[addons]/mono_garage
+    dest: ./resources/[esx_addons]/mono_garage
   
   - action: waste_time # prevent github throttling
     seconds: 5
