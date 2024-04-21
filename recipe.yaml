@@ -263,6 +263,13 @@ tasks:
   #  search: 'Key = "UP"'
   #  replace: 'Key = "F5"'
 
+
+  ## Server MAPPING
+  - action: download_github
+    dest: ./resources/[mapping]/housing_shells
+    ref: main
+    src: https://github.com/quasar-scripts/k4mb1shellstarter
+  
   ## Cleanup
   - action: remove_path
     path: ./tmp
