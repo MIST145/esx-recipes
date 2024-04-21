@@ -185,12 +185,12 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/bl_bridge
 
-  #- action: download_file
-  #  path: ./tmp/mm_radio.zip
-  #  url: https://github.com/SOH69/mm_radio/releases/download/v2.0.4/mm_radio.zip
-  #- action: unzip
-  #  dest: ./resources/[standalone]
-  #  src: ./tmp/mm_radio.zip
+  - action: download_file
+    path: ./tmp/mm_radio.zip
+    url: https://github.com/SOH69/mm_radio/releases/tag/v2.0.4/mm_radio.zip
+  - action: unzip
+    dest: ./resources/[standalone]
+    src: ./tmp/mm_radio.zip
   
   - action: waste_time # prevent github throttling
     seconds: 5
