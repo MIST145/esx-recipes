@@ -31,14 +31,14 @@ CREATE TABLE IF NOT EXISTS `player_transactions` (
 
 -- CLEAR OWNED VEHICLE TABLE
 ALTER TABLE `owned_vehicles`,
-   DROP COLUMN IF EXISTS `owner`,
-   DROP COLUMN IF EXISTS `plate`,
-   DROP COLUMN IF EXISTS `vehicle`,
-   DROP COLUMN IF EXISTS `type`,
-   DROP COLUMN IF EXISTS `job`,
-   DROP COLUMN IF EXISTS `stored`,
-   DROP COLUMN IF EXISTS `parking`,
-   DROP COLUMN IF EXISTS `pound`;
+   DROP COLUMN `owner`,
+   DROP COLUMN `plate`,
+   DROP COLUMN `vehicle`,
+   DROP COLUMN `type`,
+   DROP COLUMN `job`,
+   DROP COLUMN `stored`,
+   DROP COLUMN `parking`,
+   DROP COLUMN `pound`;
 
 -- mono garage
 CREATE TABLE  `owned_vehicles` (
