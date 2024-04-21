@@ -254,10 +254,10 @@ tasks:
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
 
-  - action: download_github
-    dest: ./resources/[ox]/ox_fuel
-    ref: main
-    src: https://github.com/overextended/ox_fuel
+  #- action: download_github
+  #  dest: ./resources/[ox]/ox_fuel
+  #  ref: main
+  #  src: https://github.com/overextended/ox_fuel
 
   ## Patching configs: esx-radio
   #- action: replace_string
