@@ -27,3 +27,6 @@ CREATE TABLE IF NOT EXISTS `player_transactions` (
   `transactions` longtext DEFAULT '[]',
   PRIMARY KEY (`id`)
 );
+
+ALTER TABLE `owned_vehicles`
+ADD COLUMN `datetimein` INT DEFAULT 0;
