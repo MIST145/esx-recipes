@@ -264,10 +264,10 @@ tasks:
   #  replace: 'Key = "F5"'
 
   ## Single file - Patching configs
-  #- action: replace_string
-  # file: ./server.cfg
-  # search: 'FXServer, but unconfigured'
-  # replace: '{{serverName}} built with {{recipeName}} by {{recipeAuthor}}!'
+  - action: replace_string
+   file: ./resources/[standalone]/Renewed-Banking/config.cfg
+   search: 'framework = 'qb''
+   replace: 'framework = 'esx''
 
   ## Server MAPPING
   - action: download_github
