@@ -263,6 +263,12 @@ tasks:
   #  search: 'Key = "UP"'
   #  replace: 'Key = "F5"'
 
+  ## Single file - Patching configs
+  #- action: replace_string
+  # file: ./server.cfg
+  # search: 'FXServer, but unconfigured'
+  # replace: '{{serverName}} built with {{recipeName}} by {{recipeAuthor}}!'
+
   ## Server MAPPING
   - action: download_github
     dest: ./resources/[mapping]/housing_shells
