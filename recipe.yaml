@@ -265,6 +265,11 @@ tasks:
 
   ## Server MAPPING
   - action: download_github
+    dest: ./resources/[mapping]/electric-chargers
+    ref: main
+    src: https://github.com/wtf-fivem-mods/wtf_tesla_supercharger
+  
+  - action: download_github
     dest: ./resources/[mapping]/housing_shells
     ref: main
     src: https://github.com/quasar-scripts/k4mb1shellstarter
