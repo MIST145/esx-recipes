@@ -282,18 +282,18 @@ tasks:
   - action: download_github
     dest: ./resources/[mapping]
     ref: main
-    src: https://github.com/hanziskilz/Legion-Square/tree/main/Legion%20Square/legion
+    src: https://github.com/DonStylz74/-mapping-/tree/main/legion-square
 
   - action: waste_time # prevent github throttling
-    seconds: 5
+    seconds: 8
   
   ## Cleanup
-  - action: move_path
-    src: ./resources/[mapping]/Legion Square/legion
-    dest: ./resources/[mapping]
+  #- action: move_path
+  #  src: ./resources/[mapping]/Legion Square/legion
+  #  dest: ./resources/[mapping]
 
-  - action: waste_time # prevent github throttling
-    seconds: 5
+  #- action: waste_time # prevent github throttling
+  #  seconds: 5
     
   - action: remove_path
     path: ./tmp
@@ -301,12 +301,9 @@ tasks:
   - action: remove_path
     path: ./resources\[core]\esx_loadingscreen
     
-  - action: remove_path
-    path: ./resources\[mapping]\legion-square
-    
- ## Replace all variables
+ ## Replace Script variables
  #- action: replace_string
- #  file: ./configs.cfg
- #  search: 'omg_replace_this'
- # replace: 'got_it!'
+ #  file: ./resources/[standalone]/Renewed-Banking/configs.lua
+ #  search: 'framework = 'qb''
+ # replace: 'framework = 'esx''
 
