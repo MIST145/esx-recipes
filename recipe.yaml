@@ -291,8 +291,8 @@ tasks:
  ## Replace Script variables
  - action: replace_string
    file: ./resources/[standalone]/Renewed-Banking/config.lua
-   search: 'qb'
-  replace: 'esx'
+   search: 'framework = 'qb','
+  replace: 'framework = 'esx','
 
   #- action: move_path
   #  src: ./resources/[mapping]/Legion Square/
