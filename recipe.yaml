@@ -167,6 +167,9 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_status
 
+  - action: waste_time # prevent github throttling
+    seconds: 5
+
   - action: move_path
     src: ./tmp/core/[core]
     dest: ./resources/[core]
@@ -190,17 +193,11 @@ tasks:
     src: https://github.com/DonStylz74/mono_garage
     ref: main
     dest: ./resources/[esx_addons]/mono_garage
-  
-  - action: waste_time # prevent github throttling
-    seconds: 5
 
   - action: download_github
     src: https://github.com/DonStylz74/esx-sna-fuel
     ref: main
     dest: ./resources/[standalone]/esx-sna-fuel
-  
-  - action: waste_time # prevent github throttling
-    seconds: 5
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
@@ -208,6 +205,9 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Banking.zip
+
+  - action: waste_time # prevent github throttling
+    seconds: 5
 
   ## SQL INSTALATION
   - action: query_database
@@ -258,11 +258,8 @@ tasks:
   #  ref: main
   #  src: https://github.com/overextended/ox_fuel
 
-  ## Patching configs: esx-radio
-  #- action: replace_string
-  #  file: ./resources/[esx_addons]/esx-radio/config.lua
-  #  search: 'Key = "UP"'
-  #  replace: 'Key = "F5"'
+  - action: waste_time # prevent github throttling
+    seconds: 5
 
   ## Server MAPPING
   - action: download_github
@@ -283,14 +280,7 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 8
   
-  ## Cleanup
-  #- action: move_path
-  #  src: ./resources/[mapping]/Legion Square/legion
-  #  dest: ./resources/[mapping]
-
-  #- action: waste_time # prevent github throttling
-  #  seconds: 5
-    
+  ## Server Build Cleanup
   - action: remove_path
     path: ./tmp
   
@@ -304,3 +294,16 @@ tasks:
  #  search: 'framework = 'qb''
  # replace: 'framework = 'esx''
 
+  #- action: move_path
+  #  src: ./resources/[mapping]/Legion Square/legion
+  #  dest: ./resources/[mapping]
+
+  #- action: waste_time # prevent github throttling
+  #  seconds: 5
+
+  ## Patching configs: esx-radio
+  #- action: replace_string
+  #  file: ./resources/[esx_addons]/esx-radio/config.lua
+  #  search: 'Key = "UP"'
+  #  replace: 'Key = "F5"'
+  
