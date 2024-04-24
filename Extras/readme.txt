@@ -1,6 +1,6 @@
 NOTE Complete these action before starting your server that is part of the server build process.
 
-1.  
+1.  setup the config files for your resources, e.g es_extended, mono garage, esx_property, esx_hud etc.
 
 2.  Add items from the ox-inventory file to ox-inventory/data/items file on the new server.
 
