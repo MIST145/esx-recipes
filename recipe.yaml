@@ -286,7 +286,7 @@ tasks:
     seconds: 5
 
   - action: download_github
-    dest: ./resources/[mapping]/legion-square
+    dest: ./resources/[mapping]
     ref: main
     src: https://github.com/hanziskilz/Legion-Square/tree/main/Legion%20Square/legion
 
@@ -295,8 +295,8 @@ tasks:
   
   ## Cleanup
   - action: move_path
-    src: ./resources\[mapping]\legion-square\Legion Square\legion
-    dest: ./resources/\[mapping]\legion_square
+    src: ./resources\[mapping]\Legion-Square\legion
+    dest: ./resources/\[mapping]\legionsquare
     
   - action: remove_path
     path: ./tmp
@@ -305,5 +305,5 @@ tasks:
     path: ./resources\[core]\esx_loadingscreen
     
   - action: remove_path
-    path: ./resources\[mapping]\legion-square\Legion Square
+    path: ./resources\[mapping]\legion-square
     
