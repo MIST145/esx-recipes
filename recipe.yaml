@@ -180,6 +180,7 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
+  ## - Comment out bellow action, to install donz loading screen 
   - action: download_github
     src: https://github.com/DonStylz74/loading_screen
     ref: main
@@ -200,11 +201,6 @@ tasks:
   
   - action: waste_time # prevent github throttling
     seconds: 5
-
-  #- action: download_github
-  #  src: https://github.com/DonStylz74/Renewed-Banking
-  #  ref: main
-  #  dest: ./resources/[standalone]/Renewed-Banking
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
@@ -297,7 +293,8 @@ tasks:
     
   - action: remove_path
     path: ./tmp
-
+  
+  ## - Comment out bellow action, to install default esx loading screen
   - action: remove_path
     path: ./resources\[core]\esx_loadingscreen
     
