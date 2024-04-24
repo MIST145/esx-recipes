@@ -181,6 +181,11 @@ tasks:
     dest: ./resources/[standalone]/pma-voice
 
   - action: download_github
+    src: https://github.com/DonStylz74/loading_screen
+    ref: main
+    dest: ./resources/[core]/loading_screen
+
+  - action: download_github
     src: https://github.com/DonStylz74/mono_garage
     ref: main
     dest: ./resources/[esx_addons]/mono_garage
@@ -269,10 +274,21 @@ tasks:
     ref: master
     dest: ./resources/[mapping]/electric-chargers
 
+  - action: waste_time # prevent github throttling
+    seconds: 5
+
   - action: download_github
     dest: ./resources/[mapping]/housing_shells
     ref: main
     src: https://github.com/quasar-scripts/k4mb1shellstarter
+
+  - action: waste_time # prevent github throttling
+    seconds: 5
+
+  - action: download_github
+    dest: ./resources/[mapping]/legion-square
+    ref: main
+    src: https://github.com/hanziskilz/Legion-Square/tree/main/Legion%20Square/legion
 
   - action: waste_time # prevent github throttling
     seconds: 5
