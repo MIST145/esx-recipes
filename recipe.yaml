@@ -296,7 +296,7 @@ tasks:
   ## Cleanup
   - action: move_path
     src: ./resources\[mapping]\legion-square\Legion Square\legion
-    dest: ./resources/\[mapping]\legion-square
+    dest: ./resources/\[mapping]\legion_square
     
   - action: remove_path
     path: ./tmp
