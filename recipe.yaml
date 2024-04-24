@@ -183,7 +183,7 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
-  ## - Comment out bellow action, to install donz loading screen 
+  ## - UnComment bellow action, to install donz loading screen
   - action: download_github
     src: https://github.com/DonStylz74/loading_screen
     ref: main
