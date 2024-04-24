@@ -289,13 +289,13 @@ tasks:
     path: ./resources\[core]\esx_loadingscreen
     
  ## Replace Script variables
- #- action: replace_string
- #  file: ./resources/[standalone]/Renewed-Banking/configs.lua
- #  search: 'framework = 'qb''
- # replace: 'framework = 'esx''
+ - action: replace_string
+   file: ./resources/[standalone]/Renewed-Banking/config.lua
+   search: 'framework = 'qb''
+  replace: 'framework = 'esx''
 
   #- action: move_path
-  #  src: ./resources/[mapping]/Legion Square/legion
+  #  src: ./resources/[mapping]/Legion Square/
   #  dest: ./resources/[mapping]
 
   #- action: waste_time # prevent github throttling
