@@ -304,3 +304,9 @@ tasks:
   - action: remove_path
     path: ./resources\[mapping]\legion-square
     
+ ## Replace all variables
+ #- action: replace_string
+ #  file: ./configs.cfg
+ #  search: 'omg_replace_this'
+ # replace: 'got_it!'
+
