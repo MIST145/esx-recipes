@@ -286,7 +286,7 @@ tasks:
   
   ## - Comment out bellow action, to install default esx loading screen
   - action: remove_path
-    path: ./resources/[core]/esx_loadingscreen
+    path: ./resources\[core]\esx_loadingscreen
     
  ## Replace Script variables
  #- action: replace_string
