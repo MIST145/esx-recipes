@@ -22,5 +22,13 @@ NOTE Complete these action before starting your server that is part of the serve
 
 4. Config the ox.cfg file on the new server. Set target on/off, set stash size etc.
 5. Set your framework in the Renewed Banking config file.
-4. setup the config files for your resources, e.g sna fuel, mono garage etc.
+4. setup the config files for your resources, e.g sna fuel, mono garage, esx_property, esx_hud etc.
+
+
+
+Last Step.  After you have completly started the server first time. Select restart server on the txadmin console. it should now start with not errors.  
+
+Current known server start errors:
+* esx_vehicleshop
+
 
