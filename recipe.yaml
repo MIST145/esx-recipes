@@ -267,7 +267,7 @@ tasks:
   - action: download_github
     dest: ./resources/[mapping]/electric-chargers
     ref: main
-    src: https://github.com/wtf-fivem-mods/wtf_tesla_supercharger
+    src: https://github.com/DonStylz74/electric-chargers
   
   - action: download_github
     dest: ./resources/[mapping]/housing_shells
