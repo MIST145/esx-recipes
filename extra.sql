@@ -29,14 +29,23 @@ CREATE TABLE IF NOT EXISTS `player_transactions` (
   PRIMARY KEY (`id`)
 );
 
--- mono garage
+-- OX Doorlock
+CREATE TABLE
+    IF NOT EXISTS `ox_doorlock` (
+        `id` int (11) unsigned NOT NULL AUTO_INCREMENT,
+        `name` varchar(50) NOT NULL,
+        `data` longtext NOT NULL,
+        PRIMARY KEY (`id`)
+    );
+
+-- Mono Garage
 ALTER TABLE `owned_vehicles`
     ADD COLUMN `infoimpound` longtext DEFAULT NULL,
     ADD COLUMN `lastparking` longtext DEFAULT NULL,
     ADD COLUMN `friends` longtext DEFAULT NULL,
     ADD COLUMN `fakeplate` varchar(12) DEFAULT NULL;
 
--- sna fuel
+-- ESX SNA Fuel
 ALTER TABLE `owned_vehicles`
    ADD COLUMN `datetimein` INT DEFAULT 0;
 
