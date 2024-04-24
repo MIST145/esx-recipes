@@ -1,0 +1,36 @@
+--Carkeys
+   ['carkeys']  = {
+		label = 'Car Keys',
+		weight = 10,
+		stack = true,
+	},
+--Fakeplate
+   ['fakeplate'] = {
+		label = 'Fake Plate',
+		weight = 1000,
+		stack = false,
+		consume = 0,
+		server = {
+			export = 'mono_garage.FakePlate'
+		}
+	},
+--Lockpick
+    ['lockpick'] = {
+		label = 'LockPick',
+		weight = 390,
+		stack = true,
+		consume = 0,
+		server = {
+			export = 'mono_garage.LockPick'
+		}
+	},
+--Wirecutt
+    ['wirecutt']                 = {
+		label = 'Wire Cutters',
+		weight = 500,
+		stack = true,
+        consume = 0,
+		server = {
+			export = 'mono_garage.HotWire'
+		}
+	},
