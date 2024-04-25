@@ -21,11 +21,18 @@ NOTE Complete these action before starting your server that is part of the serve
 -------------------------------------------------------------------------------------------------
 
 4. Config the ox.cfg file on the new server. Set target on/off, set stash size etc.
-5. Set your framework in the Renewed Banking config file.
+5. Set your framework in the Renewed Banking config file. default is QB change to esx. 
+
 6. Amend you sql server.
 
-  6a. Drop your 'vehicles' table from your servers sql database.
-  6b. 
+  6a. Delete the following data from the `datastore' table in your database,
+    `user_ears`
+    `user_glasses`
+    `user_helmet`
+    `user_mask`
+
+  6b. Drop your 'vehicles' table from your servers sql database.
+  6c. Run the 'vehicles-456-total.sql file into you datebase.
 
 
 
