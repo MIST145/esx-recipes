@@ -76,10 +76,10 @@ tasks:
     dest: ./tmp/addons
     src: ./tmp/files/esx_hud.zip
 
-  - action: download_github
-    src: https://github.com/esx-framework/esx_clotheshop
-    ref: main
-    dest: ./tmp/addons/esx_clotheshop
+  #- action: download_github
+  #  src: https://github.com/esx-framework/esx_clotheshop
+  #  ref: main
+  #  dest: ./tmp/addons/esx_clotheshop
 
   - action: download_github
     src: https://github.com/esx-framework/esx_optionalneeds
@@ -99,10 +99,10 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_dmvschool
 
-  - action: download_github
-    src: https://github.com/esx-framework/esx_barbershop
-    ref: main
-    dest: ./tmp/addons/esx_barbershop
+  #- action: download_github
+  #  src: https://github.com/esx-framework/esx_barbershop
+  # ref: main
+  #  dest: ./tmp/addons/esx_barbershop
 
   - action: download_github
     src: https://github.com/esx-framework/esx_taxijob
@@ -142,10 +142,10 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_license
 
-  - action: download_github
-    src: https://github.com/esx-framework/esx_accessories
-    ref: main
-    dest: ./tmp/addons/esx_accessories
+  #- action: download_github
+  #  src: https://github.com/esx-framework/esx_accessories
+  # ref: main
+  # dest: ./tmp/addons/esx_accessories
 
   - action: download_github
     src: https://github.com/esx-framework/esx_jobs
@@ -287,6 +287,12 @@ tasks:
   ## - Comment out bellow action, to install default esx loading screen
   - action: remove_path
     path: ./resources/[core]/esx_loadingscreen
+
+  - action: remove_path
+    path: ./resources/[core]/esx_skin
+
+  - action: remove_path
+    path: ./resources/[core]/skinchanger
     
  ## Replace Script variables
  #- action: replace_string
