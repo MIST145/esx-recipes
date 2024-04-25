@@ -1,12 +1,12 @@
 NOTE Complete these action before starting your server that is part of the server build process.
 
-1.  setup the config files for your resources, e.g es_extended, mono garage, esx_property, esx_hud etc.
+1.  setup the config files for your resources, e.g es_extended, mono garage, esx_property, esx_hud, sna fuel etc.
 
 2.  Add items from the ox-inventory file to ox-inventory/data/items file on the new server.
 
 3.  Add & Update fuel system, See below
 
-  3a. Replace all occurences of "LegacyFuel" by "esx-sna-fuel" (or wathever your directory name is) in all your server resources exports.
+  3a. Replace all occurences of "LegacyFuel" with "esx-sna-fuel" (or wathever your directory name is) in all your server resources exports.
 
   3b. Replace also all occurences of "GetVehicleFuelLevel" and replace the statement by exports['sna-fuel']:GetFuel(vehicle) Exemple around line 740 of es_extended/client/functions -
 ------------------------------------------------------------------------------------------------
@@ -22,7 +22,18 @@ NOTE Complete these action before starting your server that is part of the serve
 
 4. Config the ox.cfg file on the new server. Set target on/off, set stash size etc.
 5. Set your framework in the Renewed Banking config file.
-4. setup the config files for your resources, e.g sna fuel, mono garage, esx_property, esx_hud etc.
+6. Amend you sql server.
+
+  6a. Drop your 'vehicles' table from your servers sql database.
+  6b. 
+
+
+
+
+
+
+
+
 
 
 
