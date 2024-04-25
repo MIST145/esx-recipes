@@ -269,7 +269,7 @@ tasks:
   ## Server MAPPING
   - action: download_github
     src: https://github.com/DonStylz74/electric-chargers
-    ref: master
+    ref: main
     dest: ./resources/[mapping]/electric-chargers
 
   - action: download_github
