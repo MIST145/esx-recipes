@@ -1,8 +1,8 @@
 $engine: 3
 $onesync: on
-name: StreetLife [ESX | WIP]
+name: StreetLife RP | [ESX Legacy] -Recipe TestBuild
 author: DonStylz74
-description: Recipe of the most popular FiveM RP framework, ESX Legacy, containing Jobs, Housing, Garages & more!
+description: FiveM RP framework, ESX Legacy, Contains Jobs, Housing, Garages & more!
 
 tasks:
   # Download default CFX resources
