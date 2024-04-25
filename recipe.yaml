@@ -183,6 +183,11 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/pma-voice
 
+  - action: download_github
+    src: https://github.com/wasabirobby/fivem-appearance
+    ref: main
+    dest: ./resources/[esx_addons]/fivem-appearance
+
   ## - UnComment bellow action, to install donz loading screen
   - action: download_github
     src: https://github.com/DonStylz74/loading_screen
