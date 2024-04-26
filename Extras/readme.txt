@@ -42,11 +42,6 @@ NOTE Complete these action Just Before you save and run your server - Last part 
 
 7. Amending you SQL Server Database.
    #################################
-  7a. Delete the following data from the `datastore' table in your database,
-    `user_ears`
-    `user_glasses`
-    `user_helmet`
-    `user_mask`
 
 
 
