@@ -49,3 +49,9 @@ ALTER TABLE `owned_vehicles`
 ALTER TABLE `owned_vehicles`
    ADD COLUMN `datetimein` INT DEFAULT 0;
 
+-- Vechicle Catagory "Customs" Column
+INSERT INTO `vehicle_categories` (name, label) VALUES
+	('customs','Customs')
+;
+
+
