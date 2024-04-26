@@ -313,11 +313,11 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 2
   
-  - action: query_database
-    file: ./recipe/Extras/sql-inject.sql
+  #- action: query_database
+  #  file: ./recipe/Extras/sql-inject.sql
 
-  - action: waste_time # prevent github throttling
-    seconds: 2
+  #- action: waste_time # prevent github throttling
+  #  seconds: 2
   
   - action: query_database
     file: ./recipe/Extras/vehicles-456-total.sql
