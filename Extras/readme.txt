@@ -40,34 +40,13 @@ NOTE Complete these action Just Before you save and run your server - Last part 
 
 ------------------------------------------------------------------------------------------------
 
-7.  Code to use carkeys as an item -- Mono Garage
-    #############################################
-    7a. Copy the below code and add it to the bottom of the ox_inventory/module/item/client.lau file
-    
-    Item('carkeys', function(data, slot)
-      TriggerEvent("mono_carkeys_openclose")
-    end)
-
-
-
-6. Amending you SQL Server Database.
+7. Amending you SQL Server Database.
    #################################
-  6a. Delete the following data from the `datastore' table in your database,
+  7a. Delete the following data from the `datastore' table in your database,
     `user_ears`
     `user_glasses`
     `user_helmet`
     `user_mask`
-
-  6b. Drop your 'vehicles' table from your servers sql database.
-  6c. Run the 'vehicles-456-total.sql file into you datebase.
-
-
-
-
-
-
-
-
 
 
 
