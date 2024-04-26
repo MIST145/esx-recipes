@@ -300,9 +300,6 @@ tasks:
     path: ./resources/[core]/skinchanger
 
   ## Database Query Actions
-  - action: query_database
-    query: DROP TABLE IF EXISTS `vehicles`;
-
 
 
     
@@ -317,15 +314,3 @@ tasks:
   #  src: ./resources/[mapping]/Legion Square/
   #  dest: ./resources/[mapping]
 
-# Running a query from a file
-#- action: query_database
-#  file: ./tmp/create_tables.sql
-
-# Running a query from a string
-#- action: query_database
-#  query: |
-#    CREATE TABLE IF NOT EXISTS `users` (
-#        `id` int(10) unsigned NOT NULL,
-#        `name` tinytext NOT NULL
-#    );
-#    INSERT INTO `users` (`name`) VALUES ('tabarra');
