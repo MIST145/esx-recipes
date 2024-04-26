@@ -303,11 +303,11 @@ tasks:
     path: ./resources/[core]/skinchanger
 
   ## Database Query Actions
-
   #- action: query_database
   #  file: ./recipe/Extras/vehicles-456-total.sql
 
-    
+  - action: waste_time # prevent SQL throttling
+    seconds: 5
     
  ## Replace Script variables
  #- action: replace_string
