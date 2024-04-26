@@ -23,22 +23,31 @@ NOTE Complete these action Just Before you save and run your server - Last part 
     742-        color2 = colorSecondary,
     -------------------------------------------------------------------------------------------------
 
-5.  Updating esx_Property Wardrobe System.
+6.  Updating esx_Property Wardrobe System.
     ######################################
-    5a. Comment out --[[ ]]-- all the code below the header labeled `---Interacting With Wardrobe Markers ---` in the esx_property config.lua script file.
-    5b. copy the below snippet and place it between the header mentioned above and the commented out scipt from the actions above, so it looks like bellow.
+    6a. Comment out --[[ ]]-- all the code below the header labeled `---Interacting With Wardrobe Markers ---` in the esx_property config.lua script file.
+    
+6b. Copy the below snippet and place it between the header mentioned above and the commented out scipt from the actions above, so it looks like bellow.
+    ------------------Interacting With Wardrobe Markers -------------------------------------------
 
-------------------Interacting With Wardrobe Markers -------------------------------------------
+    Config.WardrobeInteraction = function(PropertyId, Interaction)        <--COPY
+        exports['fivem-appearance']:openWardrobe()                        <--COPY
+    end                                                                   <--COPY
 
-Config.WardrobeInteraction = function(PropertyId, Interaction)        <--COPY
-    exports['fivem-appearance']:openWardrobe()                        <--COPY
-end                                                                   <--COPY
-
---[[Config.WardrobeInteraction = function(PropertyId, Interaction)
-  ESX.TriggerServerCallback('esx_property:getPlayerDressing', function(dressing)
-    local elements = {{unselectable = true, icon = "fas fa-tshirt", title = "Wardrobe"}}
+    --[[Config.WardrobeInteraction = function(PropertyId, Interaction)
+      ESX.TriggerServerCallback('esx_property:getPlayerDressing', function(dressing)
+        local elements = {{unselectable = true, icon = "fas fa-tshirt", title = "Wardrobe"}}
 
 ------------------------------------------------------------------------------------------------
+
+7.  Code to use carkeys as an item -- Mono Garage
+    #############################################
+    7a. Copy the below code and add it to the bottom of the ox_inventory/module/item/client.lau file
+    
+    Item('carkeys', function(data, slot)
+      TriggerEvent("mono_carkeys_openclose")
+    end)
+
 
 
 6. Amending you SQL Server Database.
