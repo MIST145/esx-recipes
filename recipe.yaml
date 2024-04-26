@@ -301,8 +301,7 @@ tasks:
 
   ## Database Query Actions
   - action: query_database
-    query: |
-    DROP TABLE IF EXISTS `vehicles`;
+    query: DROP TABLE IF EXISTS `vehicles`;
 
 
 
