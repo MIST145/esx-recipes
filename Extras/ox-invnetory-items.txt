@@ -2,13 +2,13 @@
 --Carkeys
    ['carkeys']  = {
 		label = 'Car Keys',
-		weight = 10,
+		weight = 5,
 		stack = true,
 	},
 --Fakeplate
    ['fakeplate'] = {
 		label = 'Fake Plate',
-		weight = 1000,
+		weight = 350,
 		stack = false,
 		consume = 0,
 		server = {
@@ -18,7 +18,7 @@
 --Lockpick
     ['lockpick'] = {
 		label = 'LockPick',
-		weight = 390,
+		weight = 150,
 		stack = true,
 		consume = 0,
 		server = {
@@ -28,8 +28,8 @@
 --Wirecutt
     ['wirecutt'] = {
 		label = 'Wire Cutters',
-		weight = 500,
-		stack = true,
+		weight = 250,
+		stack = false,
         consume = 0,
 		server = {
 			export = 'mono_garage.HotWire'
