@@ -221,13 +221,6 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 3
 
-  - action: query_database
-    file: ./recipe/Extras/sql-cleanup.sql
-
-  - action: waste_time # prevent github throttling
-    seconds: 2
-
-
 
   ## OX INSTALATION
   - action: download_file
@@ -314,6 +307,18 @@ tasks:
 
 
   ## Database Final Query Actions
+  - action: query_database
+    file: ./recipe/Extras/sql-cleanup.sql
+
+  - action: waste_time # prevent github throttling
+    seconds: 2
+  
+  - action: query_database
+    file: ./recipe/Extras/sql-inject.sql
+
+  - action: waste_time # prevent github throttling
+    seconds: 2
+  
   - action: query_database
     file: ./recipe/Extras/vehicles-456-total.sql
 
