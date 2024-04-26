@@ -221,6 +221,9 @@ tasks:
   - action: query_database
     file: ./recipe/extra.sql
 
+  - action: query_database
+    file: ./recipe/Extras/sql-cleanup.sql
+
   - action: waste_time # prevent github throttling
     seconds: 5
 
@@ -301,6 +304,8 @@ tasks:
 
   ## Database Query Actions
 
+  #- action: query_database
+  #  file: ./recipe/Extras/vehicles-456-total.sql
 
     
     
