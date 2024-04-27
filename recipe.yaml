@@ -335,25 +335,6 @@ tasks:
   - action: remove_path
     path: ./resources/[core]/esx_loadingscreen
 
-  ## Removing Excess folder form cayotwoislands script
-  - action: remove_path
-    path: ./resources/[standalone]/Gates
-	
-  - action: remove_path
-    path: ./resources/[standalone]/Original Hangar Collision
-	
-  - action: remove_path
-    path: ./resources/[standalone]/Screenshots
-	
-	  - action: remove_path
-    path: ./resources/[standalone]/Vehicles - No Flight Or Water
-	
-  - action: remove_path
-    path: ./resources/[standalone]/Vehicles - Removed
-	
-  - action: remove_path
-    path: ./resources/[standalone]/Vehicles Backup
-
   - action: waste_time # prevent SQL throttling
     seconds: 3   
 
