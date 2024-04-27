@@ -201,6 +201,11 @@ tasks:
     ref: main
     dest: ./resources/[esx_addons]/dsPaycheckSystem
 
+  - action: download_github
+    src: https://github.com/DonStylz74/esx_cityhall
+    ref: main
+    dest: ./resources/[esx_addons]/esx_cityhall
+
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
     url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
@@ -305,6 +310,9 @@ tasks:
 
   - action: remove_path
     path: ./resources/[core]/skinchanger
+
+  - action: remove_path
+    path: ./resources/[core]/esx_joblisting
 
   ## - Comment out bellow action, to install default esx loading screen
   - action: remove_path
