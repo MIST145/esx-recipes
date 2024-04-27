@@ -207,7 +207,7 @@ tasks:
     dest: ./resources/[esx_addons]/esx_cityhall
 
   - action: download_github
-    src: https://github.com/DonStylz74/CayoTwoIslands/tree/main/CayoTwoIslands
+    src: https://github.com/DonStylz74/CayoTwoIslands
     ref: main
     dest: ./resources/[standalone]/CayoTwoIslands
 
