@@ -206,10 +206,10 @@ tasks:
     ref: main
     dest: ./resources/[esx_addons]/esx_cityhall
 
-  #- action: download_github
-  #  src: https://github.com/DonStylz74/CayoTwoIslands/tree/main/CayoTwoIslands
-  # ref: main
-  #  dest: ./resources/[standalone]
+  - action: download_github
+    src: https://github.com/DonStylz74/CayoTwoIslands/tree/main/CayoTwoIslands
+    ref: main
+    dest: ./resources/[standalone]
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
