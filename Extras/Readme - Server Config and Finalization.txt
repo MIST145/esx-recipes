@@ -1,4 +1,4 @@
-NOTE Complete these action Just Before you save and run your server - Last part of build Process.
+NOTE Complete these action Just Before you save and run your server - Setup will be displaying the server config file as its the last part of build Process.
 #################################################################################################
 
 1.  setup the config files for your resources, e.g es_extended, fivem-appearance, mono garage, esx_property, esx_hud, sna fuel etc.
