@@ -44,12 +44,13 @@ NOTE Complete these action Just Before you save and run your server - Setup will
     7a.  Replace the Paycheck.lua from resource  ` ./[core]/es_extended/server/ ` with the paycheck.lua file in the ` ./recipe/Extras ` folder.
 
 
-8. Amending you SQL Server Database.
+8. no more actions to complete
    #################################
 
 
 
-Last Step.  After you have completly started the server first time. Select restart server on the txadmin console. it should now start with not errors.  
+FINAL Step.  After you have completly started the server first time. Select restart server on the txadmin console. it should now start with not errors.  
+###########
 
 Current known server start errors:
 * esx_vehicleshop
