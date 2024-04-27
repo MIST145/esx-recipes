@@ -206,6 +206,11 @@ tasks:
     ref: main
     dest: ./resources/[esx_addons]/esx_cityhall
 
+  - action: download_github
+    src: https://github.com/DonStylz74/CayoTwoIslands/tree/main/CayoTwoIslands
+    ref: main
+    dest: ./resources/[standalone]/CayoTwoIslands
+
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
     url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
@@ -295,11 +300,23 @@ tasks:
   - action: download_github
     dest: ./resources/[mapping]
     ref: main
-    src: https://github.com/DonStylz74/job-center
+    src: https://github.com/DonStylz74/-mapping-/tree/main/job-center
+
+  - action: download_github
+    dest: ./resources/[mapping]
+    ref: main
+    src: https://github.com/DonStylz74/-mapping-/tree/main/perico-shops
 
   - action: waste_time # prevent github throttling
-    seconds: 10
+    seconds: 5
 
+  - action: download_github
+    dest: ./resources/[mapping]
+    ref: main
+    src: https://github.com/DonStylz74/-mapping-/tree/main/island-prison
+    
+  - action: waste_time # prevent github throttling
+    seconds: 10
   
   ## Server Build Cleanup Actions
   - action: remove_path
