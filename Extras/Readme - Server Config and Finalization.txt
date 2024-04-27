@@ -6,11 +6,11 @@ NOTE Complete these action Just Before you save and run your server - Last part 
 3.  Set your framework in the Renewed Banking config file. default is QB change to ESX.
 4.  Add items from the ox-inventory file to ox-inventory/data/items file on the new server.
 
-5.  Updating the Fuel System.
-    #########################
-  5a. Replace all occurences of "LegacyFuel" with "esx-sna-fuel" (or wathever your directory name is) in all your server resources exports.
+5.  Intergrtating the Fuel System.
+    ##############################
+  5a.  Replace all occurences of "LegacyFuel" with "esx-sna-fuel" (or wathever your directory name is) in all your server resources exports.
 
-  5b. Also Replace all occurences of "GetVehicleFuelLevel" and replace the statement by exports['sna-fuel']:GetFuel(vehicle) Exemple around line 740 of es_extended/client/functions 
+  5b.  Also Replace all occurences of "GetVehicleFuelLevel" and replace the statement by exports['sna-fuel']:GetFuel(vehicle) Exemple around line 740 of es_extended/client/functions 
 
     line:------------------------------------------------------------------------------------------------
     737-        bodyHealth = ESX.Math.Round(GetVehicleBodyHealth(vehicle), 1),
@@ -23,11 +23,10 @@ NOTE Complete these action Just Before you save and run your server - Last part 
     742-        color2 = colorSecondary,
     -------------------------------------------------------------------------------------------------
 
-6.  Updating esx_Property Wardrobe System.
-    ######################################
-    6a. Comment out --[[ ]]-- all the code below the header labeled `---Interacting With Wardrobe Markers ---` in the esx_property config.lua script file.
-    
-6b. Copy the below snippet and place it between the header mentioned above and the commented out scipt from the actions above, so it looks like bellow.
+6.  Intergrating fivem-appreance Wardrobe System into esx_Property.
+    ###############################################################
+    6a.  Comment out --[[ ]]-- all the code below the header labeled `---Interacting With Wardrobe Markers ---` in the esx_property config.lua script file.
+    6b.  Copy the below snippet and place it between the header mentioned above and the commented out scipt from the actions above, so it looks like bellow.
     ------------------Interacting With Wardrobe Markers -------------------------------------------
 
     Config.WardrobeInteraction = function(PropertyId, Interaction)        <--COPY
@@ -40,7 +39,12 @@ NOTE Complete these action Just Before you save and run your server - Last part 
 
 ------------------------------------------------------------------------------------------------
 
-7. Amending you SQL Server Database.
+7. Intergrating dsPaycheck System.
+   ###############################
+    7a.  Replace the Paycheck.lua from resource  ` ./[core]/es_extended/server/ ` with the paycheck.lua file in the ` ./recipe/Extras ` folder.
+
+
+8. Amending you SQL Server Database.
    #################################
 
 
