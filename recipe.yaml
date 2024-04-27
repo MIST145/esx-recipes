@@ -282,9 +282,13 @@ tasks:
     ref: main
     src: https://github.com/DonStylz74/-mapping-/tree/main/legion-square
 
+  - action: download_github
+    dest: ./resources/[mapping]
+    ref: main
+    src: https://github.com/DonStylz74/job-center
+
   - action: waste_time # prevent github throttling
     seconds: 10
-
 
   
   ## Server Build Cleanup Actions
