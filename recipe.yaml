@@ -206,10 +206,10 @@ tasks:
     ref: main
     dest: ./resources/[esx_addons]/esx_cityhall
 
-  - action: download_github
-    src: https://github.com/DonStylz74/CayoTwoIslands/tree/main/CayoTwoIslands
-    ref: main
-    dest: ./resources/[standalone]
+  #- action: download_github
+  #  src: https://github.com/DonStylz74/CayoTwoIslands/tree/main/CayoTwoIslands
+  # ref: main
+  #  dest: ./resources/[standalone]
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
@@ -334,6 +334,25 @@ tasks:
   ## - Comment out bellow action, to install default esx loading screen
   - action: remove_path
     path: ./resources/[core]/esx_loadingscreen
+
+  ## Removing Excess folder form cayotwoislands script
+  #- action: remove_path
+  #  path: ./resources/[standalone]/Gates
+	
+  #- action: remove_path
+  #  path: ./resources/[standalone]/Original Hangar Collision
+	
+  #- action: remove_path
+  #  path: ./resources/[standalone]/Screenshots
+	
+	#- action: remove_path
+  #  path: ./resources/[standalone]/Vehicles - No Flight Or Water
+	
+  #- action: remove_path
+  #  path: ./resources/[standalone]/Vehicles - Removed
+	
+  #- action: remove_path
+  #  path: ./resources/[standalone]/Vehicles Backup
 
   - action: waste_time # prevent SQL throttling
     seconds: 3   
