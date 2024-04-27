@@ -196,6 +196,11 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/esx-sna-fuel
 
+  - action: download_github
+    src: https://github.com/DonStylz74/dsPaycheckSystem
+    ref: main
+    dest: ./resources/[esx_addons]/dsPaycheckSystem
+
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
     url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
