@@ -202,6 +202,11 @@ tasks:
     dest: ./resources/[esx_addons]/esx_cityhall
 
   - action: download_github
+    src: https://github.com/DonStylz74/mVehicle
+    ref: main
+    dest: ./resources/[esx_addons]/mVehicle
+
+  - action: download_github
     src: https://github.com/DonStylz74/CayoTwoIslands
     ref: main
     dest: ./resources/[standalone]/CayoTwoIslands
