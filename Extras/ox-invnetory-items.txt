@@ -1,37 +1,29 @@
 -- MONO GARAGE
---Carkeys
-   ['carkeys']  = {
-		label = 'Car Keys',
-		weight = 5,
-		stack = true,
-	},
---Fakeplate
-   ['fakeplate'] = {
-		label = 'Fake Plate',
-		weight = 350,
-		stack = false,
-		consume = 0,
-		server = {
-			export = 'mono_garage.FakePlate'
-		}
-	},
---Lockpick
-    ['lockpick'] = {
-		label = 'LockPick',
-		weight = 150,
-		stack = true,
-		consume = 0,
-		server = {
-			export = 'mono_garage.LockPick'
-		}
-	},
---Wirecutt
-    ['wirecutt'] = {
-		label = 'Wire Cutters',
-		weight = 250,
-		stack = false,
-        consume = 0,
-		server = {
-			export = 'mono_garage.HotWire'
-		}
-	},
+['carkey'] = {
+	label = 'Carkey',
+},
+
+['lockpick'] = {
+	label = 'Lockpick',
+	weight = 160,
+	decay = true,
+	server = {
+		export = 'mVehicle.lockpick'
+	}
+},
+
+['hotwire'] = {
+	label = 'Cutter',
+	weight = 160,
+	server = {
+		export = 'mVehicle.hotwire'
+	}
+},
+
+['fakeplate'] = {
+	label = 'Fake Plate',
+	consume = 0,
+	server = {
+		export = 'mVehicle.fakeplate'
+	}
+},
