@@ -187,11 +187,6 @@ tasks:
     dest: ./resources/[core]/loading_screen
 
   - action: download_github
-    src: https://github.com/DonStylz74/mono_garage
-    ref: main
-    dest: ./resources/[esx_addons]/mono_garage
-
-  - action: download_github
     src: https://github.com/DonStylz74/esx-sna-fuel
     ref: main
     dest: ./resources/[standalone]/esx-sna-fuel
