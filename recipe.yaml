@@ -207,6 +207,11 @@ tasks:
     dest: ./resources/[esx_addons]/mVehicle
 
   - action: download_github
+    src: https://github.com/DonStylz74/mGarage
+    ref: main
+    dest: ./resources/[esx_addons]/mGarage
+
+  - action: download_github
     src: https://github.com/DonStylz74/CayoTwoIslands
     ref: main
     dest: ./resources/[standalone]/CayoTwoIslands
