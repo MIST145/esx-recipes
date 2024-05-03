@@ -38,13 +38,6 @@ CREATE TABLE
         PRIMARY KEY (`id`)
     );
 
--- Mono Garage
-ALTER TABLE `owned_vehicles`
-    ADD COLUMN `infoimpound` longtext DEFAULT NULL,
-    ADD COLUMN `lastparking` longtext DEFAULT NULL,
-    ADD COLUMN `friends` longtext DEFAULT NULL,
-    ADD COLUMN `fakeplate` varchar(12) DEFAULT NULL;
-
 -- ESX SNA Fuel
 ALTER TABLE `owned_vehicles`
    ADD COLUMN `datetimein` INT DEFAULT 0;
