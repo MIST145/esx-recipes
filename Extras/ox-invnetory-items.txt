@@ -3,16 +3,16 @@
 		label = 'Carkey',
 		weight = 25,
 		close = 'yes',
-		consume = '0',
+		consume = 0,
 		description = 'Used to Start & Lock/Unlock Vehicle Doors.',
 	},
 
 	['lockpick'] = {
-		label = 'Lockpick',
+		label = 'Vehicle Lockpick',
 		weight = 150,
 		stack = 'true',
 		close = 'yes',
-		consume = '0',
+		consume = 0,
 		description = 'Used to lockpick Vehicle Doors.',
 		decay = true,
 		server = {
@@ -25,7 +25,7 @@
 		weight = 350,
 		stack = 'false',
 		close = 'yes',
-		consume = '0',
+		consume = 0,
 		description = 'Used to Hotwire Vehicles.',
 		server = {
 		export = 'mVehicle.hotwire'
@@ -37,7 +37,7 @@
 		weight = 500,
 		stack = 'false',
 		close = 'yes',
-		consume = '0',
+		consume = 0,
 		description = 'Used to add Fake Plates to Vehicles.',
 		server = {
 		export = 'mVehicle.fakeplate'
@@ -49,6 +49,6 @@
 		weight = '2',
 		stack = 'true',
 		close = 'yes',
-		consume = '0',
+		consume = 0,
 		description = 'Used to lockpick Doors.',
 	},
