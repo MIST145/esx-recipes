@@ -1,29 +1,54 @@
--- MONO GARAGE
-['carkey'] = {
-	label = 'Carkey',
-},
+-- MONO mVehicle
+	['carkey'] = {
+		label = 'Carkey',
+		weight = 25,
+		close = 'yes',
+		consume = '0',
+		description = 'Used to Start & Lock/Unlock Vehicle Doors.',
+	},
 
-['lockpick'] = {
-	label = 'Lockpick',
-	weight = 160,
-	decay = true,
-	server = {
+	['lockpick'] = {
+		label = 'Lockpick',
+		weight = 150,
+		stack = 'true',
+		close = 'yes',
+		consume = '0',
+		description = 'Used to lockpick Vehicle Doors.',
+		decay = true,
+		server = {
 		export = 'mVehicle.lockpick'
-	}
-},
+		}
+	},
 
-['hotwire'] = {
-	label = 'Cutter',
-	weight = 160,
-	server = {
+	['hotwire'] = {
+		label = 'Cutter',
+		weight = 350,
+		stack = 'false',
+		close = 'yes',
+		consume = '0',
+		description = 'Used to Hotwire Vehicles.',
+		server = {
 		export = 'mVehicle.hotwire'
-	}
-},
+		}
+	},
 
-['fakeplate'] = {
-	label = 'Fake Plate',
-	consume = 0,
-	server = {
+	['fakeplate'] = {
+		label = 'Fake Plate',
+		weight = 500,
+		stack = 'false',
+		close = 'yes',
+		consume = '0',
+		description = 'Used to add Fake Plates to Vehicles.',
+		server = {
 		export = 'mVehicle.fakeplate'
-	}
-},
+		}
+	},
+
+	['lockpick2'] = {
+		label = 'Door Lockpick',
+		weight = '2',
+		stack = 'true',
+		close = 'yes',
+		consume = '0',
+		description = 'Used to lockpick Doors.',
+	},
