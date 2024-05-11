@@ -41,9 +41,3 @@ CREATE TABLE
 -- ESX SNA Fuel
 ALTER TABLE `owned_vehicles`
    ADD COLUMN `datetimein` INT DEFAULT 0;
-
--- DS Paycheck System
---ALTER TABLE `users` ADD COLUMN `paycheck` int(9) NOT NULL DEFAULT 0;
-
-
-
