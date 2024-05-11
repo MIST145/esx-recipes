@@ -13,4 +13,6 @@ DELETE FROM datastore WHERE name = 'user_mask';
 -- Dropping esx_banker Data from Datastore tables --  Removing esx_banker data entrys
 DELETE FROM addon_account WHERE name = 'society_banker';
 DELETE FROM jobs WHERE name = 'banker';
+DELETE FROM jobs WHERE name = 'reporter';
 DELETE FROM job_grades WHERE job_name = 'banker';
+DELETE FROM job_grades WHERE job_name = 'reporter';
