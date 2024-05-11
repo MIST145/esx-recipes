@@ -10,7 +10,7 @@ NOTE Complete these action Just Before you save and run your server - Setup will
     ##############################
   5a.  Replace all occurences of "LegacyFuel" with "esx-sna-fuel" (or wathever your directory name is) in all your server resources exports.
 
-  5b.  Also Replace all occurences of "GetVehicleFuelLevel" and replace the statement by exports['sna-fuel']:GetFuel(vehicle) Exemple around line 740 of es_extended/client/functions 
+  5b.  Also Replace all occurences of "GetVehicleFuelLevel" and replace the statement by exports['esx-sna-fuel']:GetFuel(vehicle) Exemple around line 740 of es_extended/client/functions 
 
     line:------------------------------------------------------------------------------------------------
     737-        bodyHealth = ESX.Math.Round(GetVehicleBodyHealth(vehicle), 1),
