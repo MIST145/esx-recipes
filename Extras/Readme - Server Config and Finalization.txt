@@ -47,7 +47,7 @@ NOTE Complete these action Just Before you save and run your server - Setup will
 
 8. Change SQL Query to allow 60 char Identifier
    ############################################
-    8a. Find ` local length = 42 + #PREFIX ` from resource  ` ./[core]/esx_multicharacter/server/main.lua & replace the 42 value with ` 56 ` 
+    8a. Find ` local length = 42 + #PREFIX ` from resource  ` ./[core]/esx_multicharacter/server/main.lua & replace the 42 value with ` 56 `   APPROX LINE `160`
 
 
 END. no more actions to complete
