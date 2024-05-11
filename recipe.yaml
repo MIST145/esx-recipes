@@ -178,7 +178,7 @@ tasks:
   - action: download_github
     src: https://github.com/wasabirobby/fivem-appearance
     ref: main
-    dest: ./resources/[core]/fivem-appearance
+    dest: ./resources/[esx_addons]/fivem-appearance
 
   ## - UnComment bellow action, to install donz loading screen
   - action: download_github
@@ -204,12 +204,12 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/mVehicle
     ref: main
-    dest: ./resources/[esx_addons]/mVehicle
+    dest: ./resources/[mono]/mVehicle
 
   - action: download_github
     src: https://github.com/DonStylz74/mGarage
     ref: main
-    dest: ./resources/[esx_addons]/mGarage
+    dest: ./resources/[mono]/mGarage
 
   - action: download_github
     src: https://github.com/DonStylz74/CayoTwoIslands
