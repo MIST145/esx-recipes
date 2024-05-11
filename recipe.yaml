@@ -218,7 +218,7 @@ tasks:
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
-    url: https://github.com/Renewed-Scripts/Renewed-Banking/releases/latest/download/Renewed-Banking.zip
+    url:  https://github.com/Renewed-Scripts/Renewed-Banking/releases/download/v2.0.2/Renewed-Banking.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Banking.zip
