@@ -39,10 +39,10 @@ NOTE Complete these action Just Before you save and run your server - Setup will
 
 ------------------------------------------------------------------------------------------------
 
-7. Intergrating dsPaycheck System.
-   ###############################
-    7a.  Replace the Paycheck.lua from resource  ` ./[core]/es_extended/server/ ` with the paycheck.lua file in the ` ./recipe/Extras ` folder.
-
+7. Set Spawn Locations for New Character Registrations.
+   ####################################################
+    7a.  Replace the `Config.DefaultSpawns =` from resource  ` ./[core]/es_extended/config.lua ` with  ` { x = -1107.4496, y = -2845.4797, z = 14.8864, heading = 243.7610 } `.
+    7bReplace the `Config.Spawn =` from resource  ` ./[core]/esx_multicharacter/config.lua ` with  ` { x = -1107.3363, y = -2844.8254, z = 14.8864, heading = 225.5861 } `.
 
 8. no more actions to complete
    #################################
