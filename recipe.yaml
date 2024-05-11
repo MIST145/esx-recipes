@@ -178,7 +178,7 @@ tasks:
   - action: download_github
     src: https://github.com/wasabirobby/fivem-appearance
     ref: main
-    dest: ./resources/[esx_addons]/fivem-appearance
+    dest: ./resources/[core]/fivem-appearance
 
   ## - UnComment bellow action, to install donz loading screen
   - action: download_github
