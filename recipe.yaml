@@ -89,7 +89,7 @@ tasks:
     seconds: 5
 
   - action: download_github
-    src: https://github.com/esx-framework/esx_property
+    src: https://github.com/DonStylz74/esx_property
     ref: main
     dest: ./tmp/addons/esx_property
 
@@ -109,7 +109,7 @@ tasks:
     dest: ./tmp/addons/esx_billing
 
   - action: download_github
-    src: https://github.com/esx-framework/esx_vehicleshop
+    src: https://github.com/DonStylz74/esx_vehicleshop
     ref: main
     dest: ./tmp/addons/esx_vehicleshop
 
