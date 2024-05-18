@@ -216,6 +216,11 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/CayoTwoIslands
 
+  - action: download_github
+    src: https://github.com/DonStylz74/renzu_scoreboard/tree/main/esx_renzu_scoreboard/renzu_scoreboard
+    ref: main
+    dest: ./resources/[standalone]/renzu_scoreboard
+
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
     url:  https://github.com/Renewed-Scripts/Renewed-Banking/releases/download/v2.0.2/Renewed-Banking.zip
