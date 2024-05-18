@@ -221,6 +221,11 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/renzu_scoreboard
 
+  - action: download_github
+    src: https://github.com/DonStylz74/it-drugs
+    ref: main
+    dest: ./resources/[standalone]/it-drugs
+
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
     url:  https://github.com/Renewed-Scripts/Renewed-Banking/releases/download/v2.0.2/Renewed-Banking.zip
