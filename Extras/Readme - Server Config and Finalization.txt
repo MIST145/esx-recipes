@@ -1,7 +1,7 @@
 NOTE Complete these action Just Before you save and run your server - Setup will be displaying the server config file as its the last part of build Process.
 #################################################################################################
 
-1.  setup the config files for your resources, e.g es_extended, fivem-appearance, mono garage, dsPaycheckSystem, esx_property, esx_hud, sna fuel, cityhall etc.
+1.  setup the config files for your resources, e.g es_extended, fivem-appearance, mono garage, esx_property, esx_hud, sna fuel, cityhall, etc.
 2.  Config the ox.cfg file on the new server. Set target on/off, set stash size etc.
 3.  Set your framework in the Renewed Banking config file. default is QB change to ESX.
 4.  Add items from the ox-inventory file to ox-inventory/data/items file on the new server.
@@ -23,7 +23,7 @@ NOTE Complete these action Just Before you save and run your server - Setup will
     742-        color2 = colorSecondary,
     -------------------------------------------------------------------------------------------------
 
-6.  Intergrating fivem-appreance Wardrobe System into esx_Property.
+-- 6.  Intergrating fivem-appreance Wardrobe System into esx_Property.
     ###############################################################
     6a.  Comment out --[[ ]]-- all the code below the header labeled `---Interacting With Wardrobe Markers ---` in the esx_property config.lua script file.
     6b.  Copy the below snippet and place it between the header mentioned above and the commented out scipt from the actions above, so it looks like bellow.
@@ -52,52 +52,8 @@ NOTE Complete these action Just Before you save and run your server - Setup will
 
 9. Intergrating Player PayCheck System into es_extended
    ############################################
-Go to es_extended/server/paycheck.lua and replace the StartPayCheck() function with mine below.
+Go to es_extended/server/ and replace the `paycheck.lua` with the one in the recipe/Extras folder.
 
-function StartPayCheck()
-  CreateThread(function()
-    while true do
-      Wait(Config.PaycheckInterval)
-
-      for player, xPlayer in pairs(ESX.Players) do
-        local job = xPlayer.job.grade_name
-        local salary = xPlayer.job.grade_salary
-        
-        if salary > 0 then
-          if job == 'unemployed' then -- unemployed
-            exports['randol_paycheck']:AddToPaycheck(xPlayer.identifier, salary)
-            TriggerClientEvent('esx:showAdvancedNotification', player, TranslateCap('bank'), TranslateCap('received_paycheck'), TranslateCap('received_help', salary),
-              'CHAR_BANK_MAZE', 9)
-          elseif Config.EnableSocietyPayouts then -- possibly a society
-            TriggerEvent('esx_society:getSociety', xPlayer.job.name, function(society)
-              if society ~= nil then -- verified society
-                TriggerEvent('esx_addonaccount:getSharedAccount', society.account, function(account)
-                  if account.money >= salary then -- does the society money to pay its employees?
-                    exports['randol_paycheck']:AddToPaycheck(xPlayer.identifier, salary)
-                    account.removeMoney(salary)
-
-                    TriggerClientEvent('esx:showAdvancedNotification', player, TranslateCap('bank'), TranslateCap('received_paycheck'),
-                      TranslateCap('received_salary', salary), 'CHAR_BANK_MAZE', 9)
-                  else
-                    TriggerClientEvent('esx:showAdvancedNotification', player, TranslateCap('bank'), '', TranslateCap('company_nomoney'), 'CHAR_BANK_MAZE', 1)
-                  end
-                end)
-              else -- not a society
-                exports['randol_paycheck']:AddToPaycheck(xPlayer.identifier, salary)
-                TriggerClientEvent('esx:showAdvancedNotification', player, TranslateCap('bank'), TranslateCap('received_paycheck'), TranslateCap('received_salary', salary),
-                  'CHAR_BANK_MAZE', 9)
-              end
-            end)
-          else -- generic job
-            exports['randol_paycheck']:AddToPaycheck(xPlayer.identifier, salary)
-            TriggerClientEvent('esx:showAdvancedNotification', player, TranslateCap('bank'), TranslateCap('received_paycheck'), TranslateCap('received_salary', salary),
-              'CHAR_BANK_MAZE', 9)
-          end
-        end
-      end
-    end
-  end)
-end
 
 
 END. no more actions to complete
