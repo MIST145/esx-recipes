@@ -38,6 +38,3 @@ CREATE TABLE
         PRIMARY KEY (`id`)
     );
 
--- ESX SNA Fuel
-ALTER TABLE `owned_vehicles`
-   ADD COLUMN `datetimein` INT DEFAULT 0;
