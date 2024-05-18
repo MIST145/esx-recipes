@@ -191,10 +191,10 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/esx-sna-fuel
 
-  #- action: download_github
-  #  src: https://github.com/DonStylz74/dsPaycheckSystem
-  #  ref: main
-  #  dest: ./resources/[esx_addons]/dsPaycheckSystem
+  - action: download_github
+    src: https://github.com/DonStylz74/randol_paycheck
+    ref: main
+    dest: ./resources/[esx_addons]/randol_paycheck
 
   - action: download_github
     src: https://github.com/DonStylz74/esx_cityhall
