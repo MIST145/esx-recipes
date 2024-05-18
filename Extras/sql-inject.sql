@@ -1,7 +1,8 @@
 INSERT INTO `vehicle_categories` (name, label) VALUES
 	('customs','Customs');
 
--- Dumping structure for table streetliferpesxlegacy-recipetestbuild_3ed7f0.owned_vehicles
+-- Mono mVehicle & mGarage Injection
+-- esx-sna-fuel Injection
 CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `plate` varchar(12) NOT NULL,
@@ -22,3 +23,7 @@ CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   `metadata` longtext DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- renzu scoreboard sql
+ALTER TABLE `users`
+ADD avatar mediumtext NULL;
