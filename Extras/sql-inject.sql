@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   `stored` tinyint(4) NOT NULL DEFAULT 0,
   `parking` varchar(60) DEFAULT 'Pillbox Hill',
   `pound` varchar(60) DEFAULT NULL,
-  `datetimein` int(11) unsigned zerofill DEFAULT 00000000000,
+  `datetimein` INT DEFAULT 0,
   `glovebox` longtext DEFAULT NULL,
   `trunk` longtext DEFAULT NULL,
   `mileage` int(11) DEFAULT 0,
