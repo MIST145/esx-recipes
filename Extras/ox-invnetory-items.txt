@@ -53,10 +53,11 @@
 		description = 'Used to lockpick Doors.',
 	},
 
+-- IT Drugs System
 	["watering_can"] = {
     		label = "Watering can",
-    		weight = 500,
-    		stack = false,
+    		weight = 50,
+    		stack = true,
     		close = false,
     		description = "Simple watering can",
     		client = {
@@ -66,7 +67,7 @@
 
 	["fertilizer"] = {
     		label = "Fertilizer",
-    		weight = 500,
+    		weight = 20,
     		stack = false,
     		close = false,
    		description = "Fertilizer",
@@ -77,7 +78,7 @@
 
 	["advanced_fertilizer"] = {
     		label = "Advanced fertilizer",
-    		weight = 500,
+    		weight = 50,
     		stack = false,
     		close = false,
     		description = "Fertilizer with the litte extra",
@@ -88,7 +89,7 @@
 
 	["liquid_fertilizer"] = {
     		label = "Liquid Fertilizer",
-    		weight = 200,
+    		weight = 35,
     		stack = false,
     		close = false,
     		description = "Basicly Water with nutrations",
@@ -99,7 +100,7 @@
 
 	["weed_lemonhaze_seed"] = {
     		label = "Weed Lemonhaze Seed",
-    		weight = 20,
+    		weight = 4,
     		stack = true,
     		close = true,
     		description = "Weed Lemonhaze Seed",
@@ -110,7 +111,7 @@
 
 	["weed_lemonhaze"] = {
     		label = "Weed Lemonhaze",
-    		weight = 20,
+    		weight = 1,
     		stack = true,
     		close = false,
     		description = "Weed Lemonhaze",
@@ -121,7 +122,7 @@
 
 	["coca_seed"] = {
     		label = "Coca Seed",
-    		weight = 20,
+    		weight = 8,
     		stack = true,
     		close = true,
     		description = "Coca Seed",
@@ -132,7 +133,7 @@
 
 	["coca"] = {
     		label = "Coca",
-    		weight = 20,
+    		weight = 2,
     		stack = true,
     		close = false,
     		description = "Coca",
@@ -143,7 +144,7 @@
 
 	["paper"] = {
     		label = "Paper",
-    		weight = 50,
+    		weight = 2,
     		stack = true,
     		close = false,
     		description = "Paper",
@@ -154,8 +155,8 @@
 
 	["nitrous"] = {
     		label = "Nitrous",
-    		weight = 500,
-    		stack = false,
+    		weight = 25,
+    		stack = true,
     		close = false,
     		description = "Nitrous",
     		client = {
@@ -165,10 +166,10 @@
 
 	["cocaine"] = {
     		label = "Cocaine",
-    		weight = 20,
+    		weight = 1,
     		stack = true,
     		close = true,
-    		description = "Small bag of cocaine",
+    		description = "Small 1g bag of cocaine",
     		client = {
         	image = "cocaine.png",
     		}
@@ -176,7 +177,7 @@
 
 	["joint"] = {
     		label = "Joint",
-    		weight = 10,
+    		weight = 3,
     		stack = true,
     		close = true,
     		description = "Joint",
@@ -187,7 +188,7 @@
 
 	["weed_processing_table"] = {
     		label = "Weed Processing Table",
-    		weight = 1000,
+    		weight = 10000,
     		stack = false,
     		close = true,
     		description = "Process some weed",
@@ -198,7 +199,7 @@
 
 	["cocaine_processing_table"] = {
     		label = "Cocaine Processing Table",
-    		weight = 1000,
+    		weight = 10000,
     		stack = false,
     		close = true,
     		description = "Process some cocaine",
