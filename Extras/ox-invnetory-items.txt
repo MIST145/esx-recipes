@@ -44,6 +44,7 @@
 		}
 	},
 
+-- OX Doorlocks
 	['lockpick2'] = {
 		label = 'Door Lockpick',
 		weight = '2',
