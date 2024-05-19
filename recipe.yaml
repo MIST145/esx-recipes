@@ -171,9 +171,9 @@ tasks:
     seconds: 5
 
   - action: download_github
-    src: https://github.com/AvarianKnight/pma-voice
+    src: https://github.com/mkafrin/PolyZone
     ref: main
-    dest: ./resources/[standalone]/pma-voice
+    dest: ./resources/[esx_addons]/PolyZone
 
   - action: download_github
     src: https://github.com/wasabirobby/fivem-appearance
@@ -225,6 +225,11 @@ tasks:
     src: https://github.com/DonStylz74/it-drugs
     ref: main
     dest: ./resources/[standalone]/it-drugs
+
+  - action: download_github
+    src: https://github.com/AvarianKnight/pma-voice
+    ref: main
+    dest: ./resources/[standalone]/pma-voice
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
