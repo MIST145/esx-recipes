@@ -172,7 +172,7 @@ tasks:
 
   - action: download_github
     src: https://github.com/mkafrin/PolyZone
-    ref: main
+    ref: master
     dest: ./resources/[esx_addons]/PolyZone
 
   - action: download_github
