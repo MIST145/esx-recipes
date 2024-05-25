@@ -4,6 +4,9 @@ DROP TABLE `vehicles`;
 -- Dropping owned_vehicles table to add Mono - mVehicle & mGarage
 DROP TABLE `owned_vehicles`;
 
+-- Dropping job_grades table to UPDATE PAYS ETC.
+DROP TABLE `job_grades`;
+
 -- Dropping Data from Datastore table --  Removing esx_accessories data entrys
 DELETE FROM datastore WHERE name = 'user_ears';
 DELETE FROM datastore WHERE name = 'user_glasses';
