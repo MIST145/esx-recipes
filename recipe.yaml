@@ -232,6 +232,11 @@ tasks:
     dest: ./resources/[standalone]/wp-seats
 
   - action: download_github
+    src: https://github.com/DonStylz74/lation_pawnshop
+    ref: main
+    dest: ./resources/[standalone]/lation_pawnshop
+
+  - action: download_github
     src: https://github.com/AvarianKnight/pma-voice
     ref: main
     dest: ./resources/[standalone]/pma-voice
