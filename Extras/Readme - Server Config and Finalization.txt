@@ -54,6 +54,19 @@ NOTE Complete these action Just Before you save and run your server - Setup will
    ############################################
 Go to es_extended/server/ and replace the `paycheck.lua` with the one in the recipe/Extras folder.
 
+10. Intergrating trains onto your server
+   #####################################
+Add the below code to the bottom of any clinet file of a script. If you want to add working trains to your sever
+
+-------- TRAINS ------------- 
+CreateThread(function()
+    SwitchTrainTrack(0, true)
+    SwitchTrainTrack(3, true)
+    SetTrainTrackSpawnFrequency(0, 120000)
+    SetTrainTrackSpawnFrequency(3, 120000)
+    SetRandomTrains(true)
+    SetTrainsForceDoorsOpen(false) --| Doors are always open otherwise only at stations
+end)
 
 
 END. no more actions to complete
