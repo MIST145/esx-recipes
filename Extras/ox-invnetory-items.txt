@@ -208,3 +208,13 @@
         	image = "cocaine_processing_table.png",
     		}
 	},
+	['backpack'] = {
+		label = 'Backpack',
+		weight = 220,
+		stack = false,
+		consume = 0,
+    		description = "Carry items in this Backpack",
+		client = {
+			export = 'wasabi_backpack.openBackpack'
+		}
+	},
