@@ -41,8 +41,8 @@ NOTE Complete these action Just Before you save and run your server - Setup will
 
 7. Set Spawn Locations for New Character Registrations.
    ####################################################
-    7a.  Replace the `Config.DefaultSpawns =` from resource  ` ./[core]/es_extended/config.lua ` with  ` { x = -1107.4496, y = -2845.4797, z = 14.8864, heading = 243.7610 } `.
-    7b.  Replace the `Config.Spawn =` from resource  ` ./[core]/esx_multicharacter/config.lua ` with  ` { x = -1107.3363, y = -2844.8254, z = 14.8864, heading = 225.5861 } `.
+    7a.  Replace the `Config.DefaultSpawns =` from resource  ` ./[core]/es_extended/config.lua ` with  ` { x = -1044.8203, y = -2750.0928, z = 21.3634, heading = 325.1392 },   ---  ORIG  x = -1093.2156, y = -2816.6582, z = 25.3693, heading = 330.7752 `.
+    7b.  Replace the `Config.Spawn =` from resource  ` ./[core]/esx_multicharacter/config.lua ` with  ` { x = -284.2856, y = 562.4627, z = 172.9182, heading = 19.9895 } `.
 
 
 8. Change SQL Query to allow 60 char Identifier
