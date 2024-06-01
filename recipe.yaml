@@ -237,6 +237,11 @@ tasks:
     dest: ./resources/[standalone]/lation_pawnshop
 
   - action: download_github
+    src: https://github.com/DonStylz74/wasabi_elevators
+    ref: main
+    dest: ./resources/[standalone]/wasabi_elevators
+
+  - action: download_github
     src: https://github.com/AvarianKnight/pma-voice
     ref: main
     dest: ./resources/[standalone]/pma-voice
