@@ -54,6 +54,18 @@
 		description = 'Used to lockpick Doors.',
 	},
 
+-- Wasabi Backpack
+	['backpack'] = {
+		label = 'Backpack',
+		weight = 220,
+		stack = false,
+		consume = 0,
+    		description = "Carry items in this Backpack",
+		client = {
+			export = 'wasabi_backpack.openBackpack'
+		}
+	},
+
 -- IT Drugs System
 	["watering_can"] = {
     		label = "Watering can",
@@ -207,14 +219,4 @@
     		client = {
         	image = "cocaine_processing_table.png",
     		}
-	},
-	['backpack'] = {
-		label = 'Backpack',
-		weight = 220,
-		stack = false,
-		consume = 0,
-    		description = "Carry items in this Backpack",
-		client = {
-			export = 'wasabi_backpack.openBackpack'
-		}
 	},
