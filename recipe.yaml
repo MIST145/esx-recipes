@@ -325,25 +325,25 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/electric-chargers
     ref: main
-    dest: ./resources/[mapping]/electric-chargers
+    dest: ./resources/[mapping]/[enviro]
 
   - action: download_github
-    dest: ./resources/[mapping]/housing_shells
+    dest: ./resources/[mapping]/[enviro]/housing_shells
     ref: main
     src: https://github.com/quasar-scripts/k4mb1shellstarter
 
   - action: download_github
-    dest: ./resources/[mapping]
+    dest: ./resources/[mapping]/[enviro]
     ref: main
     src: https://github.com/DonStylz74/-mapping-/tree/main/legion-square
 
   - action: download_github
-    dest: ./resources/[mapping]
+    dest: ./resources/[mapping]/[services]
     ref: main
     src: https://github.com/DonStylz74/-mapping-/tree/main/job-center
 
   - action: download_github
-    dest: ./resources/[mapping]
+    dest: ./resources/[mapping]/[shops]
     ref: main
     src: https://github.com/DonStylz74/-mapping-/tree/main/perico-shops
 
@@ -351,7 +351,7 @@ tasks:
     seconds: 5
 
   - action: download_github
-    dest: ./resources/[mapping]
+    dest: ./resources/[mapping]/[pd-ems]
     ref: main
     src: https://github.com/DonStylz74/-mapping-/tree/main/island-prison
     
