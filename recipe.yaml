@@ -222,6 +222,11 @@ tasks:
     dest: ./resources/[standalone]/renzu_scoreboard
 
   - action: download_github
+    src: https://github.com/DonStylz74/wasabi_backpack
+    ref: main
+    dest: ./resources/[standalone]/wasabi_backpack
+
+  - action: download_github
     src: https://github.com/DonStylz74/it-drugs
     ref: main
     dest: ./resources/[standalone]/it-drugs
