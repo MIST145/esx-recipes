@@ -1,5 +1,5 @@
 -- Dropping vehicles table to add Extra Vehicles
-DROP TABLE `vehicles`;
+##-- DROP TABLE `vehicles`;
 
 -- Dropping owned_vehicles table to add Mono - mVehicle & mGarage
 DROP TABLE `owned_vehicles`;
