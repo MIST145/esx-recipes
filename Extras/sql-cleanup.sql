@@ -5,7 +5,7 @@ DROP TABLE `vehicles`;
 DROP TABLE `owned_vehicles`;
 
 -- Dropping job_grades table to UPDATE PAYS ETC.
-DROP TABLE `job_grades`;
+##--DROP TABLE `job_grades`;
 
 -- Dropping Data from Datastore table --  Removing esx_accessories data entrys
 DELETE FROM datastore WHERE name = 'user_ears';
