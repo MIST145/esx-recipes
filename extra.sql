@@ -1,6 +1,9 @@
 -- Dropping vehicles table to add Extra Vehicles
 DROP TABLE `vehicles`;
 
+-- Dropping owned_vehicles table to add Mono - mVehicle & mGarage
+DROP TABLE `owned_vehicles`;
+
 -- Renewed Banking
 CREATE TABLE IF NOT EXISTS `bank_accounts_new` (
   `id` varchar(50) NOT NULL,
