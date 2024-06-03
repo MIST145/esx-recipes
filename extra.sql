@@ -1,8 +1,11 @@
--- Dropping vehicles table to add Extra Vehicles
-DROP TABLE `vehicles`;
+-- Dropping job_grades table to UPDATE PAYS ETC.
+DROP TABLE `job_grades`;
 
 -- Dropping owned_vehicles table to add Mono - mVehicle & mGarage
 DROP TABLE `owned_vehicles`;
+
+-- Dropping vehicles table to add Extra Vehicles
+DROP TABLE `vehicles`;
 
 -- Renewed Banking
 CREATE TABLE IF NOT EXISTS `bank_accounts_new` (
