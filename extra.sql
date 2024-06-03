@@ -1,3 +1,6 @@
+-- Dropping vehicles table to add Extra Vehicles
+DROP TABLE `vehicles`;
+
 -- Renewed Banking
 CREATE TABLE IF NOT EXISTS `bank_accounts_new` (
   `id` varchar(50) NOT NULL,
