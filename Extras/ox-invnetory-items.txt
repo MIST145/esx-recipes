@@ -111,7 +111,6 @@
     }
 },
 
-
 ["weed_ak47_seed"] = {
 	label = "Weed AK47 Seed",
 	weight = 4,
@@ -200,60 +199,60 @@
     	}
 	},
 
-	['paper'] = {
-		label = 'Rolling Papers',
-		stack = true,
-		weight = 2,
-    	close = false,
-    	description = "Papers to roll Joints",
-    	client = {
-       	image = "paper.png",
-    	}
-	},
+["paper"] = {
+    label = "Roll Papers",
+    weight = 50,
+    stack = true,
+    close = false,
+    description = "Paper",
+    client = {
+        image = "paper.png",
+    }
+},
 
-	["joint_ak"] = {
-		label = "Joint AK47",
-		weight = 3,
-		stack = true,
-		close = true,
-		description = "Joint AK47",
-		client = {
+["joint_ak"] = {
+    label = "Joint AK47",
+    weight = 3,
+    stack = true,
+    close = true,
+    description = "Joint AK47",
+    client = {
         image = "joint_ak.png",
-		}
-	},
+    }
+},
 
-	["joint_ogk"] = {
-		label = "Joint OGKush",
-		weight = 3,
-		stack = true,
-		close = true,
-		description = "Joint OGKush",
-		client = {
+["joint_ogk"] = {
+    label = "Joint OGKush",
+    weight = 3,
+    stack = true,
+    close = true,
+    description = "Joint OGKush",
+    client = {
         image = "joint_ogk.png",
-		}
-	},
+    }
+},
 
-	["joint_ph"] = {
-		label = "Joint Purple haze",
-		weight = 3,
-		stack = true,
-		close = true,
-		description = "Joint Purple haze",
-		client = {
+["joint_ph"] = {
+    label = "Joint Purple haze",
+    weight = 3,
+    stack = true,
+    close = true,
+    description = "Joint Purple haze",
+    client = {
         image = "joint_ph.png",
-		}
-	},
+    }
+},
 
-	["joint_sk"] = {
-		label = "Joint Skunk",
-		weight = 3,
-		stack = true,
-		close = true,
-		description = "Joint Skunk",
-		client = {
+["joint_sk"] = {
+    label = "Joint Skunk",
+    weight = 3,
+    stack = true,
+    close = true,
+    description = "Joint Skunk",
+    client = {
         image = "joint_sk.png",
-		}
-	},
+    }
+},
 
 ["coca_seed"] = {
     label = "Coca Seed",
