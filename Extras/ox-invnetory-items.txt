@@ -255,11 +255,6 @@
 		}
 	},
 
-
-
-
-
-
 ["coca_seed"] = {
     label = "Coca Seed",
     weight = 20,
