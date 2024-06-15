@@ -217,9 +217,9 @@ tasks:
     dest: ./resources/[standalone]/CayoTwoIslands
 
   - action: download_github
-    src: https://github.com/DonStylz74/renzu_scoreboard/tree/main/esx_renzu_scoreboard/renzu_scoreboard
+    src: https://github.com/DonStylz74/scoreboard
     ref: main
-    dest: ./resources/[standalone]/renzu_scoreboard
+    dest: ./resources/[standalone]/scoreboard
 
   - action: download_github
     src: https://github.com/DonStylz74/wasabi_backpack
