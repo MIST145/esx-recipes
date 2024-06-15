@@ -332,31 +332,9 @@ tasks:
     ref: main
     src: https://github.com/quasar-scripts/k4mb1shellstarter
 
-  - action: download_github
-    dest: ./resources/[mapping]/[enviro]
-    ref: main
-    src: https://github.com/DonStylz74/-mapping-/tree/main/legion-square
-
-  - action: download_github
-    dest: ./resources/[mapping]/[services]
-    ref: main
-    src: https://github.com/DonStylz74/-mapping-/tree/main/job-center
-
-  - action: download_github
-    dest: ./resources/[mapping]/[shops]
-    ref: main
-    src: https://github.com/DonStylz74/-mapping-/tree/main/perico-shops
-
+  
   - action: waste_time # prevent github throttling
-    seconds: 5
-
-  - action: download_github
-    dest: ./resources/[mapping]/[pd-ems]
-    ref: main
-    src: https://github.com/DonStylz74/-mapping-/tree/main/island-prison
-    
-  - action: waste_time # prevent github throttling
-    seconds: 10
+    seconds: 7
   
   ## Server Build Cleanup Actions
   - action: remove_path
