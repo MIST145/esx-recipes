@@ -4,7 +4,10 @@ NOTE Complete these action Just Before you save and run your server - Setup will
 1.  setup the config files for your resources, e.g es_extended, fivem-appearance, mono garage, esx_property, esx_hud, sna fuel, cityhall, etc.
 2.  Config the ox.cfg file on the new server. Set target on/off, set stash size etc.
 3.  Set your framework in the Renewed Banking config file. default is QB change to ESX.
-4.  Add items from the ox-inventory file to ox-inventory/data/items file on the new server.
+4.  Adding Ox inventory Item etc.
+    4a. Follow the steps in 'ox-inventory items' file and copy the code to ox-inventory/data/items file on your server.
+    4b. Follow the steps in 'Ammo Boxs for OX Inventory' file to ox-inventory/modules file on the new server.
+
 
 5.  Intergrtating the Fuel System.
     ##############################
@@ -22,6 +25,7 @@ NOTE Complete these action Just Before you save and run your server - Setup will
     742-        color1 = colorPrimary,
     742-        color2 = colorSecondary,
     -------------------------------------------------------------------------------------------------
+
 
 -- 6.  Intergrating fivem-appreance Wardrobe System into esx_Property.
     ###############################################################
@@ -54,9 +58,10 @@ NOTE Complete these action Just Before you save and run your server - Setup will
    ############################################
 Go to es_extended/server/ and replace the `paycheck.lua` with the one in the recipe/Extras folder.
 
+
 10. Intergrating trains onto your server
    #####################################
-Add the below code to the bottom of any clinet file of a script. If you want to add working trains to your sever
+    Add the below code to the bottom of any clinet file of a script. If you want to add working trains to your sever
 
 -------- TRAINS ------------- 
 CreateThread(function()
