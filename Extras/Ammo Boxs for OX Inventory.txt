@@ -1,3 +1,7 @@
+YOU only need to copy the module items.  Data items have all ready been add in ox item text file
+
+
+##--  ONLY COMPLETE THIS PART  --##
 ox_inventory > modules > items > server.lua
 paste this towards the bottom
 
@@ -45,7 +49,7 @@ Item('box_ammo_sniper', function(event, item, inventory, data, slot)
     end
 end)
 
--------->>
+-------->>  All done.. no need to complete the rest.
 
 
 ox_inventory > items.lua
