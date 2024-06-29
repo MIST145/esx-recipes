@@ -216,10 +216,10 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/CayoTwoIslands
 
-  - action: download_github
-    src: https://github.com/DonStylz74/scoreboard
-    ref: main
-    dest: ./resources/[standalone]/scoreboard
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/scoreboard
+  #  ref: main
+  #  dest: ./resources/[standalone]/scoreboard
 
   - action: download_github
     src: https://github.com/DonStylz74/wasabi_backpack
