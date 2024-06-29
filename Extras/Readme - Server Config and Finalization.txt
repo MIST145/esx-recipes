@@ -74,6 +74,12 @@ CreateThread(function()
 end)
 
 
+10. Adding scripts - maps - misc items
+   #####################################
+    10a.  Copy all the images from inside the [item images] folder, and paste them into  //ox-inventory/web/images folder on your server.
+    10b.  Copy the [Mapping] folder and then paste it into your 'resources' folder on your server.
+    10c.  Copy all the 'folders' inside of the [scripts] Folder, and past them into you resources folder on your server..
+
 END. no more actions to complete
    #################################
 
