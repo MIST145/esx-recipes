@@ -1,259 +1,69 @@
--- MONO mVehicle
-	['carkey'] = {
-		label = 'Carkey',
-		weight = 25,
-		close = 'yes',
-		consume = 0,
-		description = 'Used to Start & Lock/Unlock Vehicle Doors.',
-	},
-
-	['lockpick'] = {
-		label = 'Vehicle Lockpick',
-		weight = 150,
-		stack = 'true',
-		close = 'yes',
-		consume = 0,
-		description = 'Used to lockpick Vehicle Doors.',
-		decay = true,
-		server = {
-		export = 'mVehicle.lockpick'
-		}
-	},
-
-	['hotwire'] = {
-		label = 'wire Cutters',
-		weight = 350,
-		stack = 'false',
-		close = 'yes',
-		consume = 0,
-		description = 'Used to Hotwire Vehicles.',
-		server = {
-		export = 'mVehicle.hotwire'
-		}
-	},
-
-	['fakeplate'] = {
-		label = 'Fake Plate',
+	["watering_can"] = {
+		label = "Watering can",
 		weight = 500,
-		stack = 'false',
-		close = 'yes',
-		consume = 0,
-		description = 'Used to add Fake Plates to Vehicles.',
-		server = {
-		export = 'mVehicle.fakeplate'
-		}
-	},
-
--- OX Doorlocks
-	['lockpick2'] = {
-		label = 'Door Lockpick',
-		weight = '2',
-		stack = 'true',
-		close = 'yes',
-		consume = 0,
-		description = 'Used to lockpick Doors.',
-	},
-
--- Wasabi Backpack
-	['backpack'] = {
-		label = 'Backpack',
-		weight = 220,
-		stack = false,
-		consume = 0,
-    		description = "Carry items in this Backpack",
+		stack = true,
+		close = false,
+		description = "Simple watering can",
 		client = {
-			export = 'wasabi_backpack.openBackpack'
+			image = "watering_can.png",
 		}
 	},
 
--- Ammunition Boxs
-	['box_ammo_9'] = {
-        label = 'Ammo Case: 9x9mm (x120)',
-        weight = 750,
-        --consume = 0,
-        description = "A case of stuff to make problems go away",
-        client = {
-            anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
-            clip = 'machinic_loop_mechandplayer', flag = 3 },
-            prop = { model = 'prop_box_ammo02a', -- need badge props repo
-            pos = vec3(0.0, 0.7, -0.40), 
-            rot = vec3(0.00, 0.00, 90.00), 
-            bone = 56604  },
-            disable = { move = false, car = false, combat = false },
-            usetime = 5000,
-        }
-    },
-
-	['box_ammo_45'] = {
-        label = 'Ammo Case: .45 ACP (x120)',
-        weight = 800,
-        --consume = 0,
-        description = "A case of stuff to make problems go away",
-        client = {
-            anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
-            clip = 'machinic_loop_mechandplayer', flag = 3 },
-            prop = { model = 'prop_box_ammo02a', -- need badge props repo
-            pos = vec3(0.0, 0.7, -0.40), 
-            rot = vec3(0.00, 0.00, 90.00), 
-            bone = 56604  },
-            disable = { move = false, car = false, combat = false },
-            usetime = 5000,
-        }
-    },
-
-	['box_ammo_50'] = {
-        label = 'Ammo Case: .50 AE (x120)',
-        weight = 850,
-        --consume = 0,
-        description = "A case of stuff to make problems go away",
-        client = {
-            anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
-            clip = 'machinic_loop_mechandplayer', flag = 3 },
-            prop = { model = 'prop_box_ammo02a', -- need badge props repo
-            pos = vec3(0.0, 0.7, -0.40), 
-            rot = vec3(0.00, 0.00, 90.00), 
-            bone = 56604  },
-            disable = { move = false, car = false, combat = false },
-            usetime = 5000,
-        }
-    },
-
-	['box_ammo_rifle'] = {
-        label = 'Ammo Case: 5.56 (x60)',
-        weight = 900,
-        --consume = 0,
-        description = "A case of stuff to make problems go away",
-        client = {
-            anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
-            clip = 'machinic_loop_mechandplayer', flag = 3 },
-            prop = { model = 'prop_box_ammo02a', -- need badge props repo
-            pos = vec3(0.0, 0.7, -0.40), 
-            rot = vec3(0.00, 0.00, 90.00), 
-            bone = 56604  },
-            disable = { move = false, car = false, combat = false },
-            usetime = 5000,
-        }
-    },
-
-	['box_ammo_rifle2'] = {
-        label = 'Ammo Case: 7.62 (x60)',
-        weight = 950,
-        --consume = 0,
-        description = "A case of stuff to make problems go away",
-        client = {
-            anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
-            clip = 'machinic_loop_mechandplayer', flag = 3 },
-            prop = { model = 'prop_box_ammo02a', -- need badge props repo
-            pos = vec3(0.0, 0.7, -0.40), 
-            rot = vec3(0.00, 0.00, 90.00), 
-            bone = 56604  },
-            disable = { move = false, car = false, combat = false },
-            usetime = 5000,
-        }
-    },
-
-	['box_ammo_shotgun'] = {
-        label = 'Ammo Case: 12 Guage (x10)',
-        weight = 1000,
-        --consume = 0,
-        description = "A case of stuff to make problems go away",
-        client = {
-            anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
-            clip = 'machinic_loop_mechandplayer', flag = 3 },
-            prop = { model = 'prop_box_ammo02a', -- need badge props repo
-            pos = vec3(0.0, 0.7, -0.40), 
-            rot = vec3(0.00, 0.00, 90.00), 
-            bone = 56604  },
-            disable = { move = false, car = false, combat = false },
-            usetime = 5000,
-        }
-    },
-
-	['box_ammo_sniper'] = {
-        label = 'Ammo Case: 7.62 NATO (x10)',
-        weight = 1050,
-        --consume = 0,
-        description = "A case of stuff to make problems go away",
-        client = {
-            anim = { dict = 'anim@amb@clubhouse@tutorial@bkr_tut_ig3@', 
-            clip = 'machinic_loop_mechandplayer', flag = 3 },
-            prop = { model = 'prop_box_ammo02a', -- need badge props repo
-            pos = vec3(0.0, 0.7, -0.40), 
-            rot = vec3(0.00, 0.00, 90.00), 
-            bone = 56604  },
-            disable = { move = false, car = false, combat = false },
-            usetime = 5000,
-        }
-    },
-
-
--- IT Drugs System
-["watering_can"] = {
-    label = "Watering can",
-    weight = 500,
-    stack = true,
-    close = false,
-    description = "Simple watering can",
-    client = {
-        image = "watering_can.png",
-    }
-},
-
-["fertilizer"] = {
-    label = "Fertilizer",
-    weight = 500,
-    stack = true,
-    close = false,
-    description = "Fertilizer",
-    client = {
-        image = "fertilizer.png",
-    }
-},
-
-["advanced_fertilizer"] = {
-    label = "Advanced fertilizer",
-    weight = 500,
-    stack = true,
-    close = false,
-    description = "Fertilizer with the litte extra",
-    client = {
-        image = "advanced_fertilizer.png",
-    }
-},
-
-["liquid_fertilizer"] = {
-    label = "Liquid Fertilizer",
-    weight = 200,
-    stack = true,
-    close = false,
-    description = "Basicly Water with nutrations",
-    client = {
-        image = "liquid_fertilizer.png",
-    }
-},
-
-
-["weed_ak47_seed"] = {
-	label = "Weed AK47 Seed",
-	weight = 4,
-	stack = true,
-	close = true,
-	description = "Weed AK47 Seed",
-	client = {
-		image = "weed_ak47_seed.png",
-	}
+	["fertilizer"] = {
+		label = "Fertilizer",
+		weight = 500,
+		stack = false,
+		close = false,
+		description = "Fertilizer",
+		client = {
+			image = "fertilizer.png",
+		}
 	},
 
-["weed_ak47"] = {
-	label = "Weed AK47",
-	weight = 1,
-	stack = true,
-	close = false,
-	description = "Weed AK47",
-	client = {
-		image = "weed_ak47.png",
-	}
-},
+	["advanced_fertilizer"] = {
+		label = "Advanced fertilizer",
+		weight = 500,
+		stack = false,
+		close = false,
+		description = "Fertilizer with the litte extra",
+		client = {
+			image = "advanced_fertilizer.png",
+		}
+	},
+
+	["liquid_fertilizer"] = {
+		label = "Liquid Fertilizer",
+		weight = 200,
+		stack = false,
+		close = false,
+		description = "Basicly Water with nutrations",
+		client = {
+			image = "liquid_fertilizer.png",
+		}
+	},
+
+
+	["weed_ak47_seed"] = {
+		label = "Weed AK47 Seed",
+		weight = 4,
+		stack = true,
+		close = true,
+		description = "Weed AK47 Seed",
+		client = {
+			image = "weed_ak47_seed.png",
+		}
+	},
+
+	["weed_ak47"] = {
+		label = "Weed AK47",
+		weight = 1,
+		stack = true,
+		close = false,
+		description = "Weed AK47",
+		client = {
+			image = "weed_ak47.png",
+		}
+	},
 
 	['weed_ogkush_seed'] = {
 		label = 'OG Kush Seed',
@@ -558,7 +368,7 @@
     		weight = 30,
     		stack = true,
     		close = true,
-    		description = "Small bag of Cocaine",
+    		description = "1oz brick of Cocaine",
     		client = {
         	image = "baggie_coke.png",
     		}
@@ -587,17 +397,28 @@
 	},
 
 -- KUZ LOOTAREAS SCRIPT
-["plant_cutters"] = {
-    label = "Plant Cutters",
-    weight = 100,
-    stack = false,
-    close = true,
-    description = "Used to cut Plants",
-    client = {
-        image = "plant_cutters.png",
-    }
-},
+	["plant_cutters"] = {
+		label = "Plant Cutters",
+		weight = 100,
+		stack = false,
+		close = true,
+		description = "Used to cut Plants",
+		client = {
+		image = "plant_cutters.png",
+		}
+	},
 
+-- R_DRUGSALES SCRIPT
+	["r_trapphone"] = {
+		label = "Drug Sales Burner Phone",
+		weight = 100,
+		stack = false,
+		close = true,
+		description = "Used to sell large quantity's of Drugs",
+		client = {
+		image = "r_trapphone.png",
+		}
+	},
 
 -- VEHICLE HANDLEING SCRIPT
     ["cleaningkit"] = {
