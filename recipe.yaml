@@ -229,7 +229,12 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/it-drugs
     ref: main
-    dest: ./resources/[standalone]/it-drugs
+    dest: ./resources/[drugsystem]/it-drugs
+    
+  - action: download_github
+    src: https://github.com/DonStylz74/r_drugsales
+    ref: main
+    dest: ./resources/[drugsystem]/r_drugsales
 
   - action: download_github
     src: https://github.com/DonStylz74/wp-seats
