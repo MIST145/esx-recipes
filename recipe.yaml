@@ -196,10 +196,15 @@ tasks:
     ref: main
     dest: ./resources/[esx_addons]/randol_paycheck
 
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/esx_cityhall
+  #  ref: main
+  #  dest: ./resources/[esx_addons]/esx_cityhall
+
   - action: download_github
-    src: https://github.com/DonStylz74/esx_cityhall
+    src: https://github.com/DonStylz74/lunar_jobcentre
     ref: main
-    dest: ./resources/[esx_addons]/esx_cityhall
+    dest: ./resources/[standalone]/lunar_jobcentre
 
   - action: download_github
     src: https://github.com/DonStylz74/mVehicle
