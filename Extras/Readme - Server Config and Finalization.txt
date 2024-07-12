@@ -80,6 +80,9 @@ end)
     10b.  Copy the [Mapping] folder and then paste it into your 'resources' folder on your server.
     10c.  Copy all the 'folders' inside of the [scripts] Folder, and past them into you resources folder on your server..
 
+11. Add Player ID Cards & Licenses
+    Open'bl-idcard setup.lua' file and copy and paste the license items and types code into bl-idcard/config.lua file on your server.
+
 END. no more actions to complete
    #################################
 
