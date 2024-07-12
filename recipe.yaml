@@ -204,7 +204,7 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/lunar_jobcentre
     ref: main
-    dest: ./resources/[standalone]/lunar_jobcentre
+    dest: ./resources/[esx_addons]/lunar_jobcentre
 
   - action: download_github
     src: https://github.com/DonStylz74/mVehicle
