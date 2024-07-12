@@ -5,8 +5,8 @@ NOTE Complete these action Just Before you save and run your server - Setup will
 2.  Config the ox.cfg file on the new server. Set target on/off, set stash size etc.
 3.  Set your framework in the Renewed Banking config file. default is QB change to ESX.
 4.  Adding Ox inventory Items etc.
-    4a. Follow the steps in 'ox-inventory items' file and copy the code to ox-inventory/data/items file on your server.
-    4b. Follow the steps in 'Ammo Boxs for OX Inventory' file to ox-inventory/modules file on the new server.
+    4a. Open'ox-inventory items' file and copy and paste the code into ox-inventory/data/items .lua on your server.
+    4b. Follow the steps in 'Ammo Boxs for OX Inventory' file, add code to ox-inventory/modules file on the new server.
 
 
 5.  Intergrtating the Fuel System.
