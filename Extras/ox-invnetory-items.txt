@@ -681,3 +681,11 @@
 		close = true,
 		description = "Permit to show you can drive a vehicle",
 	},
+
+    ["license_weapon"] = {
+		label = "Firearms License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can own Firearms",
+	},
