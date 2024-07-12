@@ -1,10 +1,10 @@
 NOTE Complete these action Just Before you save and run your server - Setup will be displaying the server config file as its the last part of build Process.
 #################################################################################################
 
-1.  setup the config files for your resources, e.g es_extended, fivem-appearance, mono garage, esx_property, esx_hud, sna fuel, cityhall, etc.
+1.  setup the config files for your resources, e.g es_extended, fivem-appearance, mono garage, esx_property (Use Shells), esx_hud, sna fuel, cityhall, etc.
 2.  Config the ox.cfg file on the new server. Set target on/off, set stash size etc.
 3.  Set your framework in the Renewed Banking config file. default is QB change to ESX.
-4.  Adding Ox inventory Item etc.
+4.  Adding Ox inventory Items etc.
     4a. Follow the steps in 'ox-inventory items' file and copy the code to ox-inventory/data/items file on your server.
     4b. Follow the steps in 'Ammo Boxs for OX Inventory' file to ox-inventory/modules file on the new server.
 
