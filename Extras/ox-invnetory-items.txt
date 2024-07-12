@@ -476,3 +476,21 @@
             export = 'vehiclehandler.advancedrepairkit',
         }
     },
+
+
+-- BL IDCARD SCRIPT
+	["id_card"] = {
+		label = "ID Card",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "A card containing all your information to identify yourself",
+	},
+
+    ["license_drive"] = {
+		label = "Drivers License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can drive a vehicle",
+	},
