@@ -1,4 +1,4 @@
-YOU only need to copy the module items.  Data items have all ready been add in ox item text file
+YOU only need to copy the module items.  Data items have all ready been add in ox items script text file
 
 
 ##--  ONLY COMPLETE THIS PART  --##
@@ -48,9 +48,9 @@ Item('box_ammo_sniper', function(event, item, inventory, data, slot)
         Inventory.AddItem(inventory, 'ammo-sniper', 10)
     end
 end)
-
+####################################################
 -------->>  All done.. no need to complete the rest.
-
+####################################################
 
 ox_inventory > items.lua
 paste this in items.lua
