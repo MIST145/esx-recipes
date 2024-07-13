@@ -1,5 +1,5 @@
-YOU only need to copy the module items.  Data items have all ready been add in ox items script text file
-
+YOU only need to copy the module items.  Data items have all ready been added into the ox items script text file
+################################################################################################################
 
 ##--  ONLY COMPLETE THIS PART  --##
 ox_inventory > modules > items > server.lua
