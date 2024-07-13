@@ -24,9 +24,24 @@ CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- renzu scoreboard SQL Injection
-ALTER TABLE `users`
-ADD avatar mediumtext NULL;
+-- Licences SQL Injection
+CREATE TABLE IF NOT EXISTS `licenses` (
+  `type` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `label` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`type`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+INSERT INTO `licenses` (`type`, `label`) VALUES
+	('aircraft', 'Aircraft License'),
+	('boat', 'Boating Licence'),
+	('dmv', 'Driving Permit'),
+	('drive', 'Drivers License'),
+	('drive_bike', 'Motorcycle License'),
+	('drive_truck', 'Commercial Drivers License'),
+	('flightdmv', 'Flying Permit'),
+	('waterdmv', 'Boating Permit'),
+	('weapon', 'Firearms License'),
+	('weed_processing', 'Weed Processing License');
 
 -- IT_Drugs SQL Injection
 -- Install the drug_plants table
