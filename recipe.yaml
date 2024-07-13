@@ -243,12 +243,12 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/it-drugs
     ref: main
-    dest: ./resources/[esx_addons]/[drugsystem]/it-drugs
+    dest: ./resources/[esx_addons]/[drug-system]/it-drugs
     
   - action: download_github
     src: https://github.com/DonStylz74/r_drugsales
     ref: main
-    dest: ./resources/[esx_addons]/[drugsystem]/r_drugsales
+    dest: ./resources/[esx_addons]/[drug-system]/r_drugsales
 
   - action: download_github
     src: https://github.com/DonStylz74/wp-seats
