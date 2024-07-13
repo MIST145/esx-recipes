@@ -411,7 +411,6 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	('Zorrusso', 'zorrusso', 471300, 'super'),
 	('ZR350', 'zr350', 158000, 'sports'),
 	('Z-Type', 'ztype', 169500, 'sportsclassics'),
-	('Subaru WRX 05', 'scubieblob', 15000, 'sports'),
 	('Vectre', 'vectre', 205000, 'sports'),
 	('Growler', 'growler', 235000, 'sports'),
 	('Corsita', 'corsita', 348450, 'sports'),
