@@ -178,6 +178,11 @@ tasks:
   ###########################################
   ## CUSTOM SCRIPT INJECTION & INSTALATION ##
   ###########################################
+
+  - action: download_github
+    src: https://github.com/Byte-Labs-Studio/bl_bridge
+    ref: main
+    dest: ./resources/[esx_addons]/bl_bridge
   
   - action: download_github
     src: https://github.com/mkafrin/PolyZone
