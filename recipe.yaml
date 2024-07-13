@@ -266,11 +266,6 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/nv_Scoreboard
 
-  - action: download_github
-    src: https://github.com/AvarianKnight/pma-voice
-    ref: main
-    dest: ./resources/[standalone]/pma-voice
-
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
     url:  https://github.com/Renewed-Scripts/Renewed-Banking/releases/download/v2.0.2/Renewed-Banking.zip
@@ -284,6 +279,12 @@ tasks:
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/bl_idcard.zip
+
+  - action: download_github
+    src: https://github.com/AvarianKnight/pma-voice
+    ref: main
+    dest: ./resources/[standalone]/pma-voice
+    
 
   - action: waste_time # prevent github throttling
     seconds: 5
