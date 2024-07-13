@@ -169,7 +169,16 @@ tasks:
 
   - action: waste_time # prevent github throttling
     seconds: 5
+    
+  - action: download_github
+    src: https://github.com/AvarianKnight/pma-voice
+    ref: main
+    dest: ./resources/[standalone]/pma-voice
 
+  ###########################################
+  ## CUSTOM SCRIPT INJECTION & INSTALATION ##
+  ###########################################
+  
   - action: download_github
     src: https://github.com/mkafrin/PolyZone
     ref: master
@@ -277,7 +286,7 @@ tasks:
     path: ./tmp/bl_idcard.zip
     url:  https://github.com/Byte-Labs-Studio/bl_idcard/releases/download/v1.0.3/bl_idcard.zip
   - action: unzip
-    dest: ./resources/[standalone]
+    dest: ./resources/[esx_addons]
     src: ./tmp/bl_idcard.zip
 
   - action: download_github
