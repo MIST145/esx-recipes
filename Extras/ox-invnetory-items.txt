@@ -679,7 +679,39 @@
 		weight = 0,
 		stack = false,
 		close = true,
-		description = "Permit to show you can drive a vehicle",
+		description = "Permit to show you can drive Vehicles",
+	},
+
+    ["license_bike"] = {
+		label = "Motorcycle License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can ride Motorcycles",
+	},
+
+    ["license_truck"] = {
+		label = "Truck License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can drive Commercial Trucks",
+	},
+
+    ["license_boat"] = {
+		label = "Watercraft License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can drive Water Vehicles",
+	},
+
+    ["license_plane"] = {
+		label = "Aircraft License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can fly Aircrafts",
 	},
 
     ["license_weapon"] = {
