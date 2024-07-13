@@ -41,7 +41,7 @@ tasks:
   - action: download_github
     src: https://github.com/Bob74/bob74_ipl
     ref: master
-    dest: ./resources/[standalone]/bob74_ipl
+    dest: ./resources/[esx_addons]/bob74_ipl
 
   - action: download_github
     src: https://github.com/esx-framework/esx-core
@@ -228,27 +228,27 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/CayoTwoIslands
     ref: main
-    dest: ./resources/[standalone]/CayoTwoIslands
+    dest: ./resources/[esx_addons]/CayoTwoIslands
 
   - action: download_github
     src: https://github.com/DonStylz74/vehiclehandler
     ref: main
-    dest: ./resources/[standalone]/vehiclehandler
+    dest: ./resources/[esx_addons]/vehiclehandler
 
   - action: download_github
     src: https://github.com/DonStylz74/wasabi_backpack
     ref: main
-    dest: ./resources/[standalone]/wasabi_backpack
+    dest: ./resources/[esx_addons]/wasabi_backpack
 
   - action: download_github
     src: https://github.com/DonStylz74/it-drugs
     ref: main
-    dest: ./resources/[standalone]/[drugsystem]/it-drugs
+    dest: ./resources/[esx_addons]/[drugsystem]/it-drugs
     
   - action: download_github
     src: https://github.com/DonStylz74/r_drugsales
     ref: main
-    dest: ./resources/[standalone]/[drugsystem]/r_drugsales
+    dest: ./resources/[esx_addons]/[drugsystem]/r_drugsales
 
   - action: download_github
     src: https://github.com/DonStylz74/wp-seats
