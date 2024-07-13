@@ -1,4 +1,62 @@
+-- BL IDCARD SCRIPT
+-------------------
+	["id_card"] = {
+		label = "ID Card",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "A card containing all your information to identify yourself",
+	},
+
+    ["license_drive"] = {
+		label = "Drivers License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can drive Vehicles",
+	},
+
+    ["license_bike"] = {
+		label = "Motorcycle License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can ride Motorcycles",
+	},
+
+    ["license_truck"] = {
+		label = "Truck License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can drive Commercial Trucks",
+	},
+
+    ["license_boat"] = {
+		label = "Watercraft License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can drive Water Vehicles",
+	},
+
+    ["license_plane"] = {
+		label = "Aircraft License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can fly Aircrafts",
+	},
+
+    ["license_weapon"] = {
+		label = "Firearms License",
+		weight = 0,
+		stack = false,
+		close = true,
+		description = "Permit to show you can own Firearms",
+	},
 -- MONO mVehicle
+----------------
 	['carkey'] = {
 		label = 'Carkey',
 		weight = 25,
@@ -43,7 +101,65 @@
 		export = 'mVehicle.fakeplate'
 		}
 	},
--- OX Doorlocks
+-- VEHICLE HANDLING SCRIPT
+---------------------------
+    ["cleaningkit"] = {
+        label = "Cleaning Kit",
+        weight = 250,
+        stack = true,
+        close = true,
+        description = "A microfiber cloth with some soap will let your car sparkle again!",
+        client = {
+            image = "cleaningkit.png",
+        },
+        server = {
+            export = 'vehiclehandler.cleaningkit'
+        }
+    },
+
+    ["tirekit"] = {
+        label = "Tire Kit",
+        weight = 250,
+        stack = true,
+        close = true,
+        description = "A nice toolbox with stuff to repair your tire",
+        client = {
+            image = "tirekit.png",
+        },
+        server = {
+            export = 'vehiclehandler.tirekit'
+        }
+    },
+
+    ["repairkit"] = {
+        label = "Repairkit",
+        weight = 2500,
+        stack = true,
+        close = true,
+        description = "A nice toolbox with stuff to repair your vehicle",
+        client = {
+            image = "repairkit.png",
+        },
+        server = {
+            export = 'vehiclehandler.repairkit',
+        }
+    },
+
+    ["advancedrepairkit"] = {
+        label = "Advanced Repairkit",
+        weight = 5000,
+        stack = true,
+        close = true,
+        description = "A nice toolbox with stuff to repair your vehicle",
+        client = {
+            image = "advancedkit.png",
+        },
+        server = {
+            export = 'vehiclehandler.advancedrepairkit',
+        }
+    },
+-- OX DOORLOCKS
+---------------
 	['lockpick2'] = {
 		label = 'Door Lockpick',
 		weight = '2',
@@ -53,7 +169,8 @@
 		description = 'Used to lockpick Doors.',
 	},
 
--- Wasabi Backpack
+-- WASABI BACKPACK
+------------------
 	['backpack'] = {
 		label = 'Backpack',
 		weight = 220,
@@ -66,7 +183,8 @@
 	},
 
 
--- Ammunition Boxs
+-- AMMUNITION BOXS
+------------------
 	['box_ammo_9'] = {
         label = 'Ammo Case: 9x9mm (x120)',
         weight = 750,
@@ -185,8 +303,8 @@
             usetime = 5000,
         }
     },
-
-
+-- IT-DRUGS SCRIPT
+------------------
 	["watering_can"] = {
 		label = "Watering can",
 		weight = 500,
@@ -585,6 +703,7 @@
 	},
 
 -- KUZ LOOTAREAS SCRIPT
+-----------------------
 	["plant_cutters"] = {
 		label = "Plant Cutters",
 		weight = 100,
@@ -597,6 +716,7 @@
 	},
 
 -- R_DRUGSALES SCRIPT
+---------------------
 	["r_trapphone"] = {
 		label = "Drug Sales Burner Phone",
 		weight = 100,
@@ -608,116 +728,4 @@
 		}
 	},
 
--- VEHICLE HANDLEING SCRIPT
-    ["cleaningkit"] = {
-        label = "Cleaning Kit",
-        weight = 250,
-        stack = true,
-        close = true,
-        description = "A microfiber cloth with some soap will let your car sparkle again!",
-        client = {
-            image = "cleaningkit.png",
-        },
-        server = {
-            export = 'vehiclehandler.cleaningkit'
-        }
-    },
 
-    ["tirekit"] = {
-        label = "Tire Kit",
-        weight = 250,
-        stack = true,
-        close = true,
-        description = "A nice toolbox with stuff to repair your tire",
-        client = {
-            image = "tirekit.png",
-        },
-        server = {
-            export = 'vehiclehandler.tirekit'
-        }
-    },
-
-    ["repairkit"] = {
-        label = "Repairkit",
-        weight = 2500,
-        stack = true,
-        close = true,
-        description = "A nice toolbox with stuff to repair your vehicle",
-        client = {
-            image = "repairkit.png",
-        },
-        server = {
-            export = 'vehiclehandler.repairkit',
-        }
-    },
-
-    ["advancedrepairkit"] = {
-        label = "Advanced Repairkit",
-        weight = 5000,
-        stack = true,
-        close = true,
-        description = "A nice toolbox with stuff to repair your vehicle",
-        client = {
-            image = "advancedkit.png",
-        },
-        server = {
-            export = 'vehiclehandler.advancedrepairkit',
-        }
-    },
-
--- BL IDCARD SCRIPT
-	["id_card"] = {
-		label = "ID Card",
-		weight = 0,
-		stack = false,
-		close = true,
-		description = "A card containing all your information to identify yourself",
-	},
-
-    ["license_drive"] = {
-		label = "Drivers License",
-		weight = 0,
-		stack = false,
-		close = true,
-		description = "Permit to show you can drive Vehicles",
-	},
-
-    ["license_bike"] = {
-		label = "Motorcycle License",
-		weight = 0,
-		stack = false,
-		close = true,
-		description = "Permit to show you can ride Motorcycles",
-	},
-
-    ["license_truck"] = {
-		label = "Truck License",
-		weight = 0,
-		stack = false,
-		close = true,
-		description = "Permit to show you can drive Commercial Trucks",
-	},
-
-    ["license_boat"] = {
-		label = "Watercraft License",
-		weight = 0,
-		stack = false,
-		close = true,
-		description = "Permit to show you can drive Water Vehicles",
-	},
-
-    ["license_plane"] = {
-		label = "Aircraft License",
-		weight = 0,
-		stack = false,
-		close = true,
-		description = "Permit to show you can fly Aircrafts",
-	},
-
-    ["license_weapon"] = {
-		label = "Firearms License",
-		weight = 0,
-		stack = false,
-		close = true,
-		description = "Permit to show you can own Firearms",
-	},
