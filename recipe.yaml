@@ -275,15 +275,15 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/customplates
 
- ## - action: download_github
- #   src: https://github.com/DonStylz74/nv_AdvancedScoreboard/tree/main/%5BESX%5D/nv_Scoreboard
- #   ref: main
- #   dest: ./resources/[standalone]/nv_Scoreboard
-
   - action: download_github
-    src: https://github.com/DonStylz74/kossek-scoreboard
+    src: https://github.com/DonStylz74/nv_AdvancedScoreboard/tree/main/%5BESX%5D/nv_Scoreboard
     ref: main
-    dest: ./resources/[standalone]/kossek-scoreboard
+    dest: ./resources/[standalone]/nv_Scoreboard
+
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/kossek-scoreboard
+  #  ref: main
+  #  dest: ./resources/[standalone]/kossek-scoreboard
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
