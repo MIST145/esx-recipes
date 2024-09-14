@@ -113,10 +113,10 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_vehicleshop
 
-  - action: download_github
-    src: https://github.com/esx-framework/esx_joblisting
-    ref: main
-    dest: ./tmp/addons/esx_joblisting
+  ##- action: download_github
+  ##  src: https://github.com/esx-framework/esx_joblisting
+  ##  ref: main
+  ##  dest: ./tmp/addons/esx_joblisting
 
   - action: download_github
     src: https://github.com/esx-framework/esx_lscustom
