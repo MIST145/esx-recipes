@@ -372,7 +372,7 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/electric-chargers
     ref: main
-    dest: ./resources/[mapping]/[enviro]
+    dest: ./resources/[mapping]/[enviro]/electric-chargers
 
   - action: download_github
     dest: ./resources/[mapping]/[enviro]/housing_shells
