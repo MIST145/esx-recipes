@@ -170,11 +170,6 @@ tasks:
   - action: waste_time # prevent github throttling
     seconds: 5
     
-  - action: download_github
-    src: https://github.com/AvarianKnight/pma-voice
-    ref: main
-    dest: ./resources/[standalone]/pma-voice
-
   ###########################################
   ## CUSTOM SCRIPT INJECTION & INSTALATION ##
   ###########################################
