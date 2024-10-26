@@ -2,7 +2,7 @@
 DROP TABLE `job_grades`;
 
 -- Dropping owned_vehicles table to add Mono - mVehicle & mGarage
-DROP TABLE `owned_vehicles`;
+-- DROP TABLE `owned_vehicles`;
 
 -- Dropping vehicles table to add Extra Vehicles
 DROP TABLE `vehicles`;
