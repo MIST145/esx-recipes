@@ -108,10 +108,10 @@ tasks:
     ref: main
     dest: ./tmp/addons/esx_billing
 
-  - action: download_github
-    src: https://github.com/DonStylz74/esx_vehicleshop
-    ref: main
-    dest: ./tmp/addons/esx_vehicleshop
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/esx_vehicleshop
+  #  ref: main
+  #  dest: ./tmp/addons/esx_vehicleshop
 
   ##- action: download_github
   ##  src: https://github.com/esx-framework/esx_joblisting
@@ -215,15 +215,15 @@ tasks:
     ref: main
     dest: ./resources/[esx_addons]/lunar_jobcentre
 
-  - action: download_github
-    src: https://github.com/DonStylz74/mVehicle
-    ref: main
-    dest: ./resources/[mono]/mVehicle
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/mVehicle
+  #  ref: main
+  #  dest: ./resources/[mono]/mVehicle
 
-  - action: download_github
-    src: https://github.com/DonStylz74/mGarage
-    ref: main
-    dest: ./resources/[mono]/mGarage
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/mGarage
+  #  ref: main
+  #  dest: ./resources/[mono]/mGarage
 
   - action: download_github
     src: https://github.com/DonStylz74/CayoTwoIslands
@@ -240,15 +240,15 @@ tasks:
     ref: main
     dest: ./resources/[esx_addons]/wasabi_backpack
 
-  - action: download_github
-    src: https://github.com/DonStylz74/it-drugs
-    ref: main
-    dest: ./resources/[esx_addons]/[drug-system]/it-drugs
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/it-drugs
+  #  ref: main
+  #  dest: ./resources/[esx_addons]/[drug-system]/it-drugs
     
-  - action: download_github
-    src: https://github.com/DonStylz74/r_drugsales
-    ref: main
-    dest: ./resources/[esx_addons]/[drug-system]/r_drugsales
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/r_drugsales
+  #  ref: main
+  #  dest: ./resources/[esx_addons]/[drug-system]/r_drugsales
 
   - action: download_github
     src: https://github.com/DonStylz74/wp-seats
@@ -270,10 +270,10 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/customplates
 
-  - action: download_github
-    src: https://github.com/DonStylz74/nv_AdvancedScoreboard/tree/main/%5BESX%5D/nv_Scoreboard
-    ref: main
-    dest: ./resources/[standalone]/nv_Scoreboard
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/nv_AdvancedScoreboard/tree/main/%5BESX%5D/nv_Scoreboard
+  #  ref: main
+  #  dest: ./resources/[standalone]/nv_Scoreboard
 
   ##- action: download_github
   #  src: https://github.com/DonStylz74/kossek-scoreboard
@@ -388,8 +388,8 @@ tasks:
   - action: remove_path
     path: ./resources/[core]/skinchanger
 
-  - action: remove_path
-    path: ./resources/[esx_addons]/esx_joblisting
+  ##- action: remove_path
+  #  path: ./resources/[esx_addons]/esx_joblisting
 
   ## - Comment out bellow action, to install default esx loading screen
   - action: remove_path
