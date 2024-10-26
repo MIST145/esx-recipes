@@ -186,6 +186,51 @@
         }
     },
 
+-- IT-DRUGS SCRIPT
+------------------
+	["plant_pot"] = {
+		label = "Plant Pot",
+		weight = 100,
+		stack = true,
+		close = false,
+		description = "Used to Plant Seeds",
+		client = {
+			image = "plant_pot.png",
+		}
+	},
+
+["potting_mix"] = {
+    label = "Potting Mix",
+    weight = 150,
+    stack = true,
+    close = false,
+    description = "Use with Plant Pot to Plant Seeds",
+    client = {
+        image = "potting_mix.png",
+    }
+},
+
+	["water_refill"] = {
+		label = "Plant Water Refill",
+		weight = 350,
+		stack = true,
+		close = false,
+		description = "Specialize plant water refill",
+		client = {
+			image = "water_refill.png",
+		}
+	},
+
+	["wateringcan_empty"] = {
+		label = "Empty Watering Can",
+		weight = 150,
+		stack = true,
+		close = false,
+		description = "Empty watering can",
+		client = {
+			image = "wateringcan_empty.png",
+		}
+	},
 
 	["watering_can"] = {
 		label = "Watering can",
@@ -201,7 +246,7 @@
 	["fertilizer"] = {
 		label = "Fertilizer",
 		weight = 500,
-		stack = false,
+		stack = true,
 		close = false,
 		description = "Fertilizer",
 		client = {
@@ -212,7 +257,7 @@
 	["advanced_fertilizer"] = {
 		label = "Advanced fertilizer",
 		weight = 500,
-		stack = false,
+		stack = true,
 		close = false,
 		description = "Fertilizer with the litte extra",
 		client = {
@@ -223,7 +268,7 @@
 	["liquid_fertilizer"] = {
 		label = "Liquid Fertilizer",
 		weight = 200,
-		stack = false,
+		stack = true,
 		close = false,
 		description = "Basicly Water with nutrations",
 		client = {
@@ -231,6 +276,16 @@
 		}
 	},
 
+	["garden_shovel"] = {
+		label = "Gardening Shovel",
+		weight = 100,
+		stack = false,
+		close = true,
+		description = "Used to dig hole in the dirt",
+		client = {
+		image = "garden_shovel.png",
+		}
+	},
 
 	["weed_ak47_seed"] = {
 		label = "Weed AK47 Seed",
@@ -596,17 +651,6 @@
 		}
 	},
 
--- R_DRUGSALES SCRIPT
-	["r_trapphone"] = {
-		label = "Drug Sales Burner Phone",
-		weight = 100,
-		stack = false,
-		close = true,
-		description = "Used to sell large quantity's of Drugs",
-		client = {
-		image = "r_trapphone.png",
-		}
-	},
 
 -- VEHICLE HANDLEING SCRIPT
     ["cleaningkit"] = {
@@ -741,4 +785,281 @@
 		client = {
 			export = 'ed_scuba.wear'
 		}
+	},
+
+------ -DRC House Robberies  ------------
+-----------------------------------------
+	['hack_laptop'] = {
+		label = 'Hacking Laptop',
+		description = "",
+		weight = 20,
+		stack = true
+	},
+
+	['loot_bag'] = {
+		label = 'Duffle bag',
+		description = "",
+		weight = 50,
+		stack = true
+	},
+
+	['lockpick_rob'] = {
+		label = 'Burglar Lockpick',
+		description = "Can lockpick any doors when robbing houses!",
+		weight = 165,
+		stack = true
+	},
+
+	['powder'] = {
+		label = 'Bag with powder',
+		description = "Good for discovering lasers that are not visible",
+		weight = 50,
+		stack = true
+	},
+
+	['house_locator'] = {
+		label = 'House locator',
+		weight = 55,
+		stack = true
+	},
+
+	['laptop'] = {
+		label = 'Laptop',
+		description = "",
+		weight = 100,
+		stack = true
+	},
+
+	['printer'] = {
+		label = 'Printer',
+		description = "",
+		weight = 190,
+		stack = true
+	},
+
+	['npc_phone'] = {
+		label = 'Phone',
+		description = "",
+		weight = 10,
+		stack = true
+	},
+
+	['monitor'] = {
+		label = 'Monitor',
+		description = "",
+		weight = 50,
+		stack = true
+	},
+
+	['television'] = {
+		label = 'TV',
+		description = "",
+		weight = 155,
+		stack = true
+	},
+
+	['flat_television'] = {
+		label = 'Flat TV',
+		description = "",
+		weight = 155,
+		stack = true
+	},
+
+	['radio_alarm'] = {
+		label = 'Radio',
+		description = "",
+		weight = 30,
+		stack = true
+	},
+
+	['fan'] = {
+		label = 'Fan',
+		description = "",
+		weight = 20,
+		stack = true
+	},
+
+	['shoebox'] = {
+		label = 'Shoe box',
+		description = "",
+		weight = 45,
+		stack = true
+	},
+
+	['dj_deck'] = {
+		label = 'DJ Deck',
+		description = "",
+		weight = 95,
+		stack = true
+	},
+
+	['console'] = {
+		label = 'Console',
+		description = "",
+		weight = 55,
+		stack = true
+	},
+
+	['boombox'] = {
+		label = 'Boombox',
+		description = "",
+		weight = 85,
+		stack = true
+	},
+
+	['bong'] = {
+		label = 'Bong',
+		description = "",
+		weight = 25,
+		stack = true
+	},
+
+	['coffemachine'] = {
+		label = 'Coffe machine',
+		description = "",
+		weight = 55,
+		stack = true
+	},
+
+	['tapeplayer'] = {
+		label = 'Tape Player',
+		description = "",
+		weight = 55,
+		stack = true
+	},
+
+	['hairdryer'] = {
+		label = 'Hairdryer',
+		description = "",
+		weight = 55,
+		stack = true
+	},
+
+	['j_phone'] = {
+		label = 'Phone',
+		description = "",
+		weight = 55,
+		stack = true
+	},
+
+	['sculpture'] = {
+		label = 'Sculpture',
+		description = "",
+		weight = 55,
+		stack = true
+	},
+
+	['toiletry'] = {
+		label = 'Toiletry',
+		description = "",
+		weight = 10,
+		stack = true
+	},
+
+	['pogo'] = {
+		label = 'Art Piece',
+		description = "Pogo Statue",
+		weight = 155,
+		stack = true
+	},
+
+	['bracelet'] = {
+		label = 'Bracelet',
+		description = "",
+		weight = 25,
+		stack = true
+	},
+
+	['book'] = {
+		label = 'Book',
+		description = "",
+		weight = 25,
+		stack = true
+	},
+
+	['earings'] = {
+		label = 'Earings',
+		description = "",
+		weight = 25,
+		stack = true
+	},
+
+	['gold_bracelet'] = {
+		label = 'Gold bracelet',
+		description = "",
+		weight = 45,
+		stack = true
+	},
+
+	['gold_watch'] = {
+		label = 'Gold watch',
+		weight = 55,
+		stack = true
+	},
+
+	['powder'] = {
+		label = 'Bag with powder',
+		description = "Good for discovering lasers that are not visible",
+		weight = 50,
+		stack = true
+	},
+
+	['house_locator'] = {
+		label = 'House locator',
+		weight = 55,
+		stack = true
+	},
+
+	['necklace'] = {
+		label = 'Necklace',
+		weight = 55,
+		stack = true
+	},
+
+	['notepad'] = {
+		label = 'Notepad',
+		weight = 5,
+		stack = true
+	},
+
+	['pencil'] = {
+		label = 'Pencil',
+		weight = 25,
+		stack = true
+	},
+
+	['romantic_book'] = {
+		label = 'Romantic book',
+		weight = 25,
+		stack = true
+	},
+
+	['shampoo'] = {
+		label = 'Shampoo',
+		weight = 25,
+		stack = true
+	},
+
+	['soap'] = {
+		label = 'Soap',
+		weight = 25,
+		stack = true
+	},
+
+	['toothpaste'] = {
+		label = 'Toothpaste',
+		weight = 15,
+		stack = true
+	},
+
+	['watch'] = {
+		label = 'Watch',
+		weight = 35,
+		stack = true
+	},
+		
+	['skull'] = {
+		label = 'Skull Art with diamonds',
+		weight = 95,
+		stack = true
 	},
