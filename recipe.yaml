@@ -275,12 +275,12 @@ tasks:
   #  ref: main
   #  dest: ./resources/[standalone]/nv_Scoreboard
 
-  - action: download_file
-    path: ./tmp/cfx-tcd-starterpack.zip
-    src: https://github.com/Teezy-Core/cfx-tcd-starterpack/releases/tag/v2.2.0/cfx-tcd-starterpack.zip
-  - action: unzip
-    dest: ./resources/[standalone]/tcd-starterpack
-    src: ./tmp/cfx-tcd-starterpack.zip
+  ##- action: download_file
+  #  path: ./tmp/cfx-tcd-starterpack.zip
+  #  src: https://github.com/Teezy-Core/cfx-tcd-starterpack/releases/tag/v2.2.0/cfx-tcd-starterpack.zip
+  #- action: unzip
+  #  dest: ./resources/[standalone]/tcd-starterpack
+  #  src: ./tmp/cfx-tcd-starterpack.zip
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
