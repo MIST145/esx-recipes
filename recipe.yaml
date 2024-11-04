@@ -275,10 +275,10 @@ tasks:
   #  ref: main
   #  dest: ./resources/[standalone]/nv_Scoreboard
 
-  ##- action: download_github
-  #  src: https://github.com/DonStylz74/kossek-scoreboard
-  #  ref: main
-  #  dest: ./resources/[standalone]/kossek-scoreboard
+  - action: download_file
+    src: https://github.com/Teezy-Core/cfx-tcd-starterpack/releases/tag/v2.2.0/cfx-tcd-starterpack.zip
+  - action: unzip
+    dest: ./resources/[standalone]/tcd-starterpack
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
