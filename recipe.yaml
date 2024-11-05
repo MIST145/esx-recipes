@@ -371,10 +371,10 @@ tasks:
     ref: main
     dest: ./resources/[mapping]/[enviro]/electric-chargers
 
-  - action: download_github
-    dest: ./resources/[mapping]/[enviro]/housing_shells
-    ref: main
-    src: https://github.com/yarnkickdev/k4mb1_shells
+  ##- action: download_github
+  #  dest: ./resources/[mapping]/[enviro]/housing_shells
+  #  ref: main
+  #  src: https://github.com/yarnkickdev/k4mb1_shells
 
   
   - action: waste_time # prevent github throttling
