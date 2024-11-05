@@ -260,27 +260,30 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/lation_pawnshop
 
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/wasabi_elevators
+  #  ref: main
+  #  dest: ./resources/[standalone]/wasabi_elevators
+
   - action: download_github
-    src: https://github.com/DonStylz74/wasabi_elevators
+    src: https://github.com/DonStylz74/5m-Elevator
     ref: main
-    dest: ./resources/[standalone]/wasabi_elevators
+    dest: ./resources/[standalone]/5m-Elevator
 
   - action: download_github
     src: https://github.com/DonStylz74/customplates
     ref: main
     dest: ./resources/[standalone]/customplates
 
+  - action: download_github
+    src: https://github.com/DonStylz74/tcd-starterpack
+    ref: main
+    dest: ./resources/[standalone]/tcd-starterpack
+
   ##- action: download_github
   #  src: https://github.com/DonStylz74/nv_AdvancedScoreboard/tree/main/%5BESX%5D/nv_Scoreboard
   #  ref: main
   #  dest: ./resources/[standalone]/nv_Scoreboard
-
-  - action: download_file
-    path: ./tmp/cfx-tcd-starterpack.zip
-    src: https://github.com/Teezy-Core/cfx-tcd-starterpack/releases/tag/v2.2.0/cfx-tcd-starterpack.zip
-  - action: unzip
-    dest: ./resources/[standalone]/
-    src: ./tmp/cfx-tcd-starterpack.zip
 
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
