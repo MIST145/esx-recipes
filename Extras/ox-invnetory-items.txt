@@ -1,48 +1,3 @@
--- MONO mVehicle
-	['carkey'] = {
-		label = 'Carkey',
-		weight = 25,
-		close = 'yes',
-		consume = 0,
-		description = 'Used to Start & Lock/Unlock Vehicle Doors.',
-	},
-
-	['lockpick'] = {
-		label = 'Vehicle Lockpick',
-		weight = 150,
-		stack = 'true',
-		close = 'yes',
-		consume = 0,
-		description = 'Used to lockpick Vehicle Doors.',
-		decay = true,
-		server = {
-		export = 'mVehicle.lockpick'
-		}
-	},
-
-	['hotwire'] = {
-		label = 'wire Cutters',
-		weight = 350,
-		stack = 'false',
-		close = 'yes',
-		consume = 0,
-		description = 'Used to Hotwire Vehicles.',
-		server = {
-		export = 'mVehicle.hotwire'
-		}
-	},
-
-	['fakeplate'] = {
-		label = 'Fake Plate',
-		weight = 500,
-		stack = 'false',
-		close = 'yes',
-		consume = 0,
-		description = 'Used to add Fake Plates to Vehicles.',
-		server = {
-		export = 'mVehicle.fakeplate'
-		}
-	},
 -- OX Doorlocks
 	['lockpick2'] = {
 		label = 'Door Lockpick',
@@ -392,6 +347,9 @@
 		stack = true,
 		close = true,
 		description = "Joint AK47",
+		server = {
+          export = "it-drugs.joint_ak"
+		},
 		client = {
         image = "joint_ak.png",
 		}
@@ -403,6 +361,9 @@
 		stack = true,
 		close = true,
 		description = "Joint OGKush",
+		server = {
+          export = "it-drugs.joint_ogk"
+		},
 		client = {
         image = "joint_ogk.png",
 		}
@@ -414,6 +375,9 @@
 		stack = true,
 		close = true,
 		description = "Joint Purple haze",
+		server = {
+          export = "it-drugs.joint_ph"
+		},
 		client = {
         image = "joint_ph.png",
 		}
@@ -425,6 +389,9 @@
 		stack = true,
 		close = true,
 		description = "Joint Skunk",
+		server = {
+          export = "it-drugs.joint_sk"
+		},
 		client = {
         image = "joint_sk.png",
 		}
@@ -579,6 +546,9 @@
 		stack = true,
 		close = true,
 		description = "Cocaine",
+		server = {
+  	   	  export = "it-drugs.cocaine"
+		},
 		client = {
 		image = "cocaine.png",
 		}
