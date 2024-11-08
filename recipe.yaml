@@ -174,21 +174,6 @@ tasks:
   ## CUSTOM SCRIPT INJECTION & INSTALATION ##
   ###########################################
 
-  - action: download_github
-    src: https://github.com/Byte-Labs-Studio/bl_bridge
-    ref: main
-    dest: ./resources/[esx_addons]/bl_bridge
-  
-  - action: download_github
-    src: https://github.com/mkafrin/PolyZone
-    ref: master
-    dest: ./resources/[esx_addons]/PolyZone
-
-  - action: download_github
-    src: https://github.com/wasabirobby/fivem-appearance
-    ref: main
-    dest: ./resources/[esx_addons]/fivem-appearance
-
   ## - UnComment bellow action, to install donz loading screen
   - action: download_github
     src: https://github.com/DonStylz74/loading_screen
@@ -196,34 +181,29 @@ tasks:
     dest: ./resources/[core]/loading_screen
 
   - action: download_github
-    src: https://github.com/DonStylz74/esx-sna-fuel
+    src: https://github.com/Byte-Labs-Studio/bl_bridge
     ref: main
-    dest: ./resources/[standalone]/esx-sna-fuel
+    dest: ./resources/[dependants]/bl_bridge
+  
+  - action: download_github
+    src: https://github.com/mkafrin/PolyZone
+    ref: master
+    dest: ./resources/[dependants]/PolyZone
+
+  - action: download_github
+    src: https://github.com/wasabirobby/fivem-appearance
+    ref: main
+    dest: ./resources/[esx_addons]/fivem-appearance
 
   - action: download_github
     src: https://github.com/DonStylz74/randol_paycheck
     ref: main
     dest: ./resources/[esx_addons]/randol_paycheck
 
-  ##- action: download_github
-  #  src: https://github.com/DonStylz74/esx_cityhall
-  #  ref: main
-  #  dest: ./resources/[esx_addons]/esx_cityhall
-
   - action: download_github
     src: https://github.com/DonStylz74/lunar_jobcentre
     ref: main
     dest: ./resources/[esx_addons]/lunar_jobcentre
-
-  ##- action: download_github
-  #  src: https://github.com/DonStylz74/mVehicle
-  #  ref: main
-  #  dest: ./resources/[mono]/mVehicle
-
-  ##- action: download_github
-  #  src: https://github.com/DonStylz74/mGarage
-  #  ref: main
-  #  dest: ./resources/[mono]/mGarage
 
   - action: download_github
     src: https://github.com/DonStylz74/CayoTwoIslands
@@ -231,39 +211,41 @@ tasks:
     dest: ./resources/[esx_addons]/CayoTwoIslands
 
   - action: download_github
-    src: https://github.com/DonStylz74/vehiclehandler
+    src: https://github.com/DonStylz74/esx-sna-fuel
     ref: main
-    dest: ./resources/[esx_addons]/vehiclehandler
+    dest: ./resources/[esx_extras]/esx-sna-fuel
+
+  - action: download_github
+    src: https://github.com/DonStylz74/lation_pawnshop
+    ref: main
+    dest: ./resources/[esx_extras]/lation_pawnshop
 
   - action: download_github
     src: https://github.com/DonStylz74/wasabi_backpack
     ref: main
-    dest: ./resources/[esx_addons]/wasabi_backpack
+    dest: ./resources/[esx_extras]/wasabi_backpack
 
-  ##- action: download_github
-  #  src: https://github.com/DonStylz74/it-drugs
-  #  ref: main
-  #  dest: ./resources/[esx_addons]/[drug-system]/it-drugs
-    
-  ##- action: download_github
-  #  src: https://github.com/DonStylz74/r_drugsales
-  #  ref: main
-  #  dest: ./resources/[esx_addons]/[drug-system]/r_drugsales
+  - action: download_github
+    src: https://github.com/DonStylz74/tcd-starterpack
+    ref: main
+    dest: ./resources/[esx_extras]/tcd-starterpack
+
+  - action: download_file
+    path: ./tmp/bl_idcard.zip
+    url:  https://github.com/Byte-Labs-Studio/bl_idcard/releases/download/v1.0.3/bl_idcard.zip
+  - action: unzip
+    dest: ./resources/[esx_extras]
+    src: ./tmp/bl_idcard.zip
+
+  - action: download_github
+    src: https://github.com/DonStylz74/vehiclehandler
+    ref: main
+    dest: ./resources/[standalone]/vehiclehandler
 
   - action: download_github
     src: https://github.com/DonStylz74/wp-seats
     ref: main
     dest: ./resources/[standalone]/wp-seats
-
-  - action: download_github
-    src: https://github.com/DonStylz74/lation_pawnshop
-    ref: main
-    dest: ./resources/[standalone]/lation_pawnshop
-
-  ##- action: download_github
-  #  src: https://github.com/DonStylz74/wasabi_elevators
-  #  ref: main
-  #  dest: ./resources/[standalone]/wasabi_elevators
 
   - action: download_github
     src: https://github.com/DonStylz74/5m-Elevator
@@ -275,16 +257,6 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/customplates
 
-  - action: download_github
-    src: https://github.com/DonStylz74/tcd-starterpack
-    ref: main
-    dest: ./resources/[standalone]/tcd-starterpack
-
-  ##- action: download_github
-  #  src: https://github.com/DonStylz74/nv_AdvancedScoreboard/tree/main/%5BESX%5D/nv_Scoreboard
-  #  ref: main
-  #  dest: ./resources/[standalone]/nv_Scoreboard
-
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
     url:  https://github.com/Renewed-Scripts/Renewed-Banking/releases/download/v2.0.2/Renewed-Banking.zip
@@ -292,18 +264,25 @@ tasks:
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Banking.zip
 
-  - action: download_file
-    path: ./tmp/bl_idcard.zip
-    url:  https://github.com/Byte-Labs-Studio/bl_idcard/releases/download/v1.0.3/bl_idcard.zip
-  - action: unzip
-    dest: ./resources/[esx_addons]
-    src: ./tmp/bl_idcard.zip
-
   - action: download_github
     src: https://github.com/AvarianKnight/pma-voice
     ref: main
     dest: ./resources/[standalone]/pma-voice
+
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/it-drugs
+  #  ref: main
+  #  dest: ./resources/[esx_addons]/[drug-system]/it-drugs
     
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/r_drugsales
+  #  ref: main
+  #  dest: ./resources/[esx_addons]/[drug-system]/r_drugsales
+
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/wasabi_elevators
+  #  ref: main
+  #  dest: ./resources/[standalone]/wasabi_elevators
 
   - action: waste_time # prevent github throttling
     seconds: 5
@@ -437,3 +416,17 @@ tasks:
   #  src: ./resources/[mapping]/Legion Square/
   #  dest: ./resources/[mapping]
 
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/esx_cityhall
+  #  ref: main
+  #  dest: ./resources/[esx_addons]/esx_cityhall
+
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/mVehicle
+  #  ref: main
+  #  dest: ./resources/[mono]/mVehicle
+
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/mGarage
+  #  ref: main
+  #  dest: ./resources/[mono]/mGarage
