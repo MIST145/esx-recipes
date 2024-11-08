@@ -40,7 +40,8 @@ INSERT INTO `licenses` (`type`, `label`) VALUES
       water DOUBLE NOT NULL DEFAULT 0,
       growtime INT(11) NOT NULL
   );
-
+ 
+  -- Install the drug_processing table
   CREATE TABLE IF NOT EXISTS drug_processing (
       id VARCHAR(11) NOT NULL, PRIMARY KEY(id),
       coords LONGTEXT NOT NULL,
