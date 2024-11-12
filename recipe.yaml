@@ -39,7 +39,7 @@ tasks:
   - action: connect_database
 
   - action: download_github
-    src: https://github.com/Bob74/bob74_ipl
+    src: https://github.com/DonStylz74/bob74_ipl
     ref: master
     dest: ./tmp/addons/bob74_ipl
 
