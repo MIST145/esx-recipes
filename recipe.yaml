@@ -243,6 +243,11 @@ tasks:
     src: ./tmp/bl_idcard.zip
 
   - action: download_github
+    src: https://github.com/DonStylz74/LGF_PauseMenu
+    ref: main
+    dest: ./resources/[standalone]/LGF_PauseMenu
+
+  - action: download_github
     src: https://github.com/DonStylz74/vehiclehandler
     ref: main
     dest: ./resources/[standalone]/vehiclehandler
