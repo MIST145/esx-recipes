@@ -189,6 +189,11 @@ tasks:
     src: https://github.com/mkafrin/PolyZone
     ref: master
     dest: ./resources/[dependants]/PolyZone
+  
+  - action: download_github
+    src: https://github.com/DonStylz74/screenshot-basic
+    ref: master
+    dest: ./resources/[dependants]/screenshot-basic
 
   - action: download_github
     src: https://github.com/wasabirobby/fivem-appearance
