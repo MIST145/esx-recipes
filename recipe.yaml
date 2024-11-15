@@ -195,6 +195,7 @@ tasks:
     ref: master
     dest: ./resources/[dependants]/screenshot-basic
 
+## - Advanced Vehicle Damage TRUE - JG Advanced Garage
   - action: download_github
     src: https://github.com/DonStylz74/VehicleDeformation
     ref: master
