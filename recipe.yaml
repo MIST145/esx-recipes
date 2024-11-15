@@ -196,6 +196,11 @@ tasks:
     dest: ./resources/[dependants]/screenshot-basic
 
   - action: download_github
+    src: https://github.com/DonStylz74/VehicleDeformation
+    ref: master
+    dest: ./resources/[dependants]/VehicleDeformation
+
+  - action: download_github
     src: https://github.com/wasabirobby/fivem-appearance
     ref: main
     dest: ./resources/[esx_addons]/fivem-appearance
