@@ -167,6 +167,12 @@ INSERT INTO `licenses` (`type`, `label`) VALUES
 	('weapon', 'Firearms License'),
 	('weed_processing', 'Weed Processing License');
 
+INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
+	('larrysautos', 'LarrysAutos', 0),
+	('pdmpaletobay', 'PDM PaletoBay', 0),
+	('pdmpillbox', 'PDM Pillbox', 0),
+	('pdmrockford', 'PDM Rockford', 0);
+
 -- Install JOBGRADES & Payrate Changes 
 --------------------------------------
 CREATE TABLE IF NOT EXISTS `job_grades` (
@@ -212,10 +218,18 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 	(37, 'pdmrockford', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
 	(38, 'pdmrockford', 3, 'manager', 'Manager', 150, '{}', '{}'),
 	(39, 'pdmrockford', 4, 'boss', 'Owner', 175, '{}', '{}'),
-	(40, 'pdmpaletobay', 1, 'sale', 'Salesman', 100, '{}', '{}'),
+	(40, 'pdmpaletobay', 1, 'sales', 'Salesman', 100, '{}', '{}'),
 	(41, 'pdmpaletobay', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
 	(42, 'pdmpaletobay', 3, 'manager', 'Manager', 150, '{}', '{}'),
-	(43, 'pdmpaletobay', 4, 'boss', 'Owner', 175, '{}', '{}');
+	(43, 'pdmpaletobay', 4, 'boss', 'Owner', 175, '{}', '{}'),
+	(44, 'pdmpillbox', 1, 'sales', 'Salesman', 100, '{}', '{}'),
+	(45, 'pdmpillbox', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
+	(46, 'pdmpillbox', 3, 'manager', 'Manager', 150, '{}', '{}'),
+	(47, 'pdmpillbox', 3, 'boss', 'Owner', 175, '{}', '{}'),
+	(48, 'larrysautos', 1, 'sales', 'Salesman', 100, '{}', '{}'),
+	(49, 'larrysautos', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
+	(50, 'larrysautos', 3, 'manager', 'Manager', 150, '{}', '{}'),
+	(51, 'larrysautos', 3, 'boss', 'Owner', 175, '{}', '{}');
 
 -- Install Player Starterpack table
 -----------------------------------
