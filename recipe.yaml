@@ -369,6 +369,11 @@ tasks:
     ref: main
     dest: ./resources/[mapping]/[enviro]/electric-chargers
 
+  - action: download_github
+    src: https://github.com/DonStylz74/ku_ltd_retexture/tree/main/ku_ltd_retexture
+    ref: main
+    dest: ./resources/[mapping]/[shops]/ku_ltd_retexture
+
   ##- action: download_github
   #  dest: ./resources/[mapping]/[enviro]/housing_shells
   #  ref: main
