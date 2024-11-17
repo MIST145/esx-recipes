@@ -221,10 +221,10 @@ tasks:
     ref: main
     dest: ./resources/[esx_addons]/CayoTwoIslands
 
-  - action: download_github
-    src: https://github.com/DonStylz74/esx-sna-fuel
-    ref: main
-    dest: ./resources/[esx_extras]/esx-sna-fuel
+  ##- action: download_github
+  #  src: https://github.com/DonStylz74/esx-sna-fuel
+  #  ref: main
+  #  dest: ./resources/[esx_extras]/esx-sna-fuel
 
   - action: download_github
     src: https://github.com/DonStylz74/lation_pawnshop
@@ -353,10 +353,10 @@ tasks:
     dest: ./resources/[ox]
     src: ./tmp/ox_inventory.zip
 
-  #- action: download_github
-  #  dest: ./resources/[ox]/ox_fuel
-  #  ref: main
-  #  src: https://github.com/overextended/ox_fuel
+  - action: download_github
+    dest: ./resources/[ox]/ox_fuel
+    ref: main
+    src: https://github.com/overextended/ox_fuel
 
   - action: waste_time # prevent github throttling
     seconds: 5
