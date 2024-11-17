@@ -187,10 +187,11 @@ INSERT INTO `licenses` (`type`, `label`) VALUES
 	('weed_processing', 'Weed Processing License');
 
 INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
-	('larrysautos', 'LarrysAutos', 0),
 	('pdmpaletobay', 'PDM PaletoBay', 0),
 	('pdmpillbox', 'PDM Pillbox', 0),
-	('pdmrockford', 'PDM Rockford', 0);
+	('pdmrockford', 'PDM Rockford', 0),
+	('docktease', 'DockTease', 0),
+	('saunderscycles', 'Saunders Cycles', 0);
 
 -- Install JOBGRADES & Payrate Changes 
 --------------------------------------
@@ -245,10 +246,14 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 	(45, 'pdmpillbox', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
 	(46, 'pdmpillbox', 3, 'manager', 'Manager', 150, '{}', '{}'),
 	(47, 'pdmpillbox', 3, 'boss', 'Owner', 175, '{}', '{}'),
-	(48, 'larrysautos', 1, 'sales', 'Salesman', 100, '{}', '{}'),
-	(49, 'larrysautos', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
-	(50, 'larrysautos', 3, 'manager', 'Manager', 150, '{}', '{}'),
-	(51, 'larrysautos', 3, 'boss', 'Owner', 175, '{}', '{}');
+	(48, 'saunderscycles', 1, 'sales', 'Salesman', 100, '{}', '{}'),
+	(49, 'saunderscycles', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
+	(50, 'saunderscycles', 3, 'manager', 'Manager', 150, '{}', '{}'),
+	(51, 'saunderscycles', 4, 'boss', 'Owner', 175, '{}', '{}'),
+	(52, 'docktease', 1, 'sales', 'Salesman', 100, '{}', '{}'),
+	(53, 'docktease', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
+	(54, 'docktease', 3, 'manager', 'Manager', 150, '{}', '{}'),
+	(55, 'docktease', 4, 'boss', 'Owner', 175, '{}', '{}');
 
 -- Install Player Starterpack table
 -----------------------------------
