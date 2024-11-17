@@ -144,8 +144,27 @@ INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 
 -- Add Vehicle category - CUSTOMS
 ---------------------------------
-INSERT INTO `vehicle_categories` (name, label) VALUES
-	('customs','Customs');
+CREATE TABLE IF NOT EXISTS `vehicle_categories` (
+  `name` varchar(60) NOT NULL,
+  `label` varchar(60) NOT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+INSERT INTO `vehicle_categories` (`name`, `label`) VALUES
+	('boats', 'WaterCraft'),
+	('compacts', 'Compacts'),
+	('coupes', 'Coupes'),
+	('customs', 'Customs'),
+	('motorcycles', 'Motos'),
+	('muscle', 'Muscle'),
+	('offroad', 'Off Road'),
+	('sedans', 'Sedans'),
+	('sports', 'Sports'),
+	('sportsclassics', 'Sports Classics'),
+	('super', 'Super'),
+	('suvs', 'SUVs'),
+	('vans', 'Vans');
+
 
 -- Licences SQL Injection
 -------------------------
