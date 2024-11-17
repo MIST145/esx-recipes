@@ -462,4 +462,22 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	('Walton L35', 'l35', 66850, 'offroad'),
 	('Buffalo EVX', 'buffalo5', 172950, 'sports'),
 	('La Coureuse', 'coureur', 139300, 'sports'),
-	('Bravado Hotring Hellfire', 'gauntlet6', 95000, 'muscle');
+	('Bravado Hotring Hellfire', 'gauntlet6', 95000, 'muscle'),
+-- Boats Insert bellow
+	('Seashark', 'seashark', 9200, 'boats'),
+	('dinghy 2seat', 'dinghy2', 16850, 'boats'),
+	('dinghy 4seat', 'dinghy', 21750, 'boats'),
+	('Marquis', 'marquis', 32750, 'boats'),
+	('Suntrap', 'suntrap', 35500, 'boats'),
+	('Tropic', 'tropic', 40250, 'boats'),
+	('Tropic2', 'tropic2', 40250, 'boats'),
+	('Squalo', 'squalo', 68000, 'boats'),
+	('Speeder', 'speeder', 83500, 'boats'),
+	('Speeder2', 'speeder2', 83500, 'boats'),
+	('Toro', 'toro', 87900, 'boats'),
+	('Toro2', 'toro2', 87900, 'boats'),
+	('Jetmax', 'jetmax', 112000, 'boats'),
+	('Longfin', 'longfin', 133900, 'boats'),
+	('Submersible', 'submersible', 156350, 'boats'),
+	('Kraken', 'submersible2', 176500, 'boats'),
+	('Avisa', 'avisa', 329500, 'boats');
