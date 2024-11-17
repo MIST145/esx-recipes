@@ -124,8 +124,7 @@ CREATE TABLE IF NOT EXISTS `ox_doorlock` (
   `name` varchar(50) NOT NULL,
   `data` longtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 	(1, 'PDM RH Main 1', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"doors":[{"model":73386408,"coords":{"x":-1269.7930908203126,"y":-368.1114807128906,"z":37.11116027832031},"heading":298},{"model":-1152174184,"coords":{"x":-1268.5780029296876,"y":-370.37017822265627,"z":37.0992431640625},"heading":298}],"coords":{"x":-1269.185546875,"y":-369.2408447265625,"z":37.1052017211914},"lockSound":"door_bolt","groups":{"pdmrockford":1},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}'),
@@ -137,8 +136,9 @@ INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 	(8, 'PDM PB Main 3', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"doors":[{"model":100848840,"coords":{"x":-227.233642578125,"y":6219.71923828125,"z":32.20662689208984},"heading":227},{"model":-2050436002,"coords":{"x":-225.76284790039063,"y":6221.29638671875,"z":32.20662689208984},"heading":227}],"coords":{"x":-226.4982452392578,"y":6220.5078125,"z":32.20662689208984},"lockSound":"door_bolt","groups":{"pdmpaletobay":1},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}'),
 	(10, 'PDM PB Garage', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"heading":224,"doors":false,"coords":{"x":-236.80198669433595,"y":6228.22607421875,"z":32.26290512084961},"autolock":10,"lockSound":"metal_locker","groups":{"pdmpaletobay":1},"unlockSound":"door_bolt","model":354430864,"maxDistance":5,"lockpick":true,"doorRate":0.2,"holdOpen":true}'),
 	(11, 'PDM PB Office', '{"lockpickDifficulty":["easy","easy","medium"],"state":1,"heading":225,"doors":false,"coords":{"x":-222.48281860351563,"y":6220.31787109375,"z":32.20540618896484},"autolock":5,"lockSound":"metal_locker","groups":{"pdmrockford":2},"unlockSound":"metallic_creak","model":100848840,"maxDistance":1,"lockpick":true}'),
-	(12, 'PDMMechDivider', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"holdOpen":true,"doors":[{"model":100848840,"coords":{"x":-227.07333374023438,"y":6228.265625,"z":32.20662689208984},"heading":316},{"model":-2050436002,"coords":{"x":-228.62588500976563,"y":6229.765625,"z":32.20662689208984},"heading":316}],"coords":{"x":-227.849609375,"y":6229.015625,"z":32.20662689208984},"autolock":5,"lockSound":"door_bolt","groups":{"pdmrpaletobay":4},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}');
-
+	(12, 'PDMMechDevider', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"holdOpen":true,"doors":[{"model":100848840,"coords":{"x":-227.07333374023438,"y":6228.265625,"z":32.20662689208984},"heading":316},{"model":-2050436002,"coords":{"x":-228.62588500976563,"y":6229.765625,"z":32.20662689208984},"heading":316}],"coords":{"x":-227.849609375,"y":6229.015625,"z":32.20662689208984},"autolock":5,"lockSound":"door_bolt","groups":{"pdmrpaletobay":4},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}'),
+	(13, 'PDM PH Main', '{"lockSound":"door_bolt","unlockSound":"door_bolt","lockpick":true,"state":1,"doors":[{"model":-2052973320,"coords":{"x":-39.20265579223633,"y":-1107.82958984375,"z":26.73880195617675},"heading":160},{"model":212937492,"coords":{"x":-37.38660430908203,"y":-1108.4906005859376,"z":26.73880195617675},"heading":340}],"lockpickDifficulty":["easy","easy","easy","easy","easy"],"maxDistance":1,"coords":{"x":-38.29463195800781,"y":-1108.16015625,"z":26.73880195617675},"groups":{"pdmpillbox":0}}'),
+	(15, 'PDM PH Garage', '{"groups":{"pdmpillbox":0},"lockpick":true,"coords":{"x":-53.56601333618164,"y":-1101.961669921875,"z":25.4862117767334},"lockSound":"metal_locker","maxDistance":5,"lockpickDifficulty":["easy","easy","easy","easy","easy"],"autolock":10,"heading":340,"doors":false,"holdOpen":true,"doorRate":0.6,"unlockSound":"door_bolt","state":1,"model":1871067447}');
 
 
 
