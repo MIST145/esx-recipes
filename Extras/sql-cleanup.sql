@@ -3,6 +3,7 @@ DROP TABLE `job_grades`;
 
 -- Dropping vehicles table to add Extra Vehicles
 DROP TABLE `vehicles`;
+DROP TABLE `vehicle_categories`;
 
 -- Dropping licenses table to add Extra Licenses
 DROP TABLE `licenses`;
