@@ -283,12 +283,6 @@ CREATE TABLE IF NOT EXISTS `tcd_starterpack` (
   `received` tinyint(1) DEFAULT NULL
 );
 
--- esx-sna-fuel Injection
--- CREATE TABLE IF NOT EXISTS `owned_vehicles` (
---  `datetimein` INT DEFAULT 0,
---  PRIMARY KEY (`id`)
---);
-
 -- IT_Drugs SQL Injection
 
   CREATE TABLE IF NOT EXISTS drug_plants (
