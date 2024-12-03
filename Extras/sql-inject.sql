@@ -137,7 +137,7 @@ CREATE TABLE IF NOT EXISTS `ox_doorlock` (
   `name` varchar(50) NOT NULL,
   `data` longtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+);
 
 INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 	(1, 'PDM RH Main 1', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"doors":[{"model":73386408,"coords":{"x":-1269.7930908203126,"y":-368.1114807128906,"z":37.11116027832031},"heading":298},{"model":-1152174184,"coords":{"x":-1268.5780029296876,"y":-370.37017822265627,"z":37.0992431640625},"heading":298}],"coords":{"x":-1269.185546875,"y":-369.2408447265625,"z":37.1052017211914},"lockSound":"door_bolt","groups":{"pdmrockford":1},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}'),
@@ -162,7 +162,7 @@ CREATE TABLE IF NOT EXISTS `vehicle_categories` (
   `name` varchar(60) NOT NULL,
   `label` varchar(60) NOT NULL,
   PRIMARY KEY (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+);
 
 INSERT INTO `vehicle_categories` (`name`, `label`) VALUES
 	('boats', 'WaterCraft'),
@@ -186,7 +186,7 @@ CREATE TABLE IF NOT EXISTS `licenses` (
   `type` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
   `label` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`type`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+);
 
 INSERT INTO `licenses` (`type`, `label`) VALUES
 	('aircraft', 'Aircraft License'),
@@ -220,7 +220,7 @@ CREATE TABLE IF NOT EXISTS `job_grades` (
   `skin_male` longtext NOT NULL,
   `skin_female` longtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+);
 
 INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
 	(1, 'unemployed', 0, 'unemployed', 'Unemployed', 50, '{}', '{}'),
@@ -281,7 +281,7 @@ CREATE TABLE IF NOT EXISTS `tcd_starterpack` (
   `identifier` varchar(255) DEFAULT NULL,
   `date_received` varchar(10) DEFAULT NULL,
   `received` tinyint(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+);
 
 -- esx-sna-fuel Injection
 -- CREATE TABLE IF NOT EXISTS `owned_vehicles` (
