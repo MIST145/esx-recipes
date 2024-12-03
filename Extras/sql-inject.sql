@@ -1,20 +1,36 @@
 -- JG Advance Garages
 ---------------------
--- player_vehicles
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `fuel` INT(10) DEFAULT '100';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `engine` INT(10) DEFAULT '1000';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `body` INT(10) DEFAULT '1000';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `damage` LONGTEXT DEFAULT '';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `in_garage` TINYINT(1) DEFAULT '1';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `garage_id` VARCHAR(255) DEFAULT 'Legion Square';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `job_vehicle` TINYINT(1) DEFAULT '0';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `job_vehicle_rank` INT(10) DEFAULT '0';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `gang_vehicle` TINYINT(1) DEFAULT '0';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `gang_vehicle_rank` INT(10) DEFAULT '0';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `impound` INT(10) DEFAULT '0';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `impound_retrievable` INT(10) DEFAULT '0';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `impound_data` LONGTEXT DEFAULT '';
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `nickname` VARCHAR(255) DEFAULT '';
+-- playerowned_vehicles
+CREATE TABLE IF NOT EXISTS `owned_vehicles` (
+  `owner` varchar(60) DEFAULT NULL,
+  `plate` varchar(12) NOT NULL,
+  `vehicle` longtext DEFAULT NULL,
+  `type` varchar(20) NOT NULL DEFAULT 'car',
+  `job` varchar(20) DEFAULT NULL,
+  `stored` tinyint(4) NOT NULL DEFAULT 0,
+  `parking` varchar(60) DEFAULT NULL,
+  `pound` varchar(60) DEFAULT NULL,
+  `mileage` float DEFAULT 0,
+  `glovebox` longtext DEFAULT NULL,
+  `trunk` longtext DEFAULT NULL,
+  `fuel` int(10) DEFAULT 100,
+  `engine` int(10) DEFAULT 1000,
+  `body` int(10) DEFAULT 1000,
+  `damage` longtext DEFAULT '',
+  `in_garage` tinyint(1) DEFAULT 1,
+  `garage_id` varchar(255) DEFAULT 'Legion Square',
+  `job_vehicle` tinyint(1) DEFAULT 0,
+  `job_vehicle_rank` int(10) DEFAULT 0,
+  `gang_vehicle` tinyint(1) DEFAULT 0,
+  `gang_vehicle_rank` int(10) DEFAULT 0,
+  `impound` int(10) DEFAULT 0,
+  `impound_retrievable` int(10) DEFAULT 0,
+  `impound_data` longtext DEFAULT '',
+  `nickname` varchar(255) DEFAULT '',
+  `financed` tinyint(1) NOT NULL DEFAULT 0,
+  `finance_data` longtext DEFAULT NULL,
+  PRIMARY KEY (`plate`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 CREATE TABLE IF NOT EXISTS `player_priv_garages` (
     `id` INT(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -31,8 +47,6 @@ CREATE TABLE IF NOT EXISTS `player_priv_garages` (
 
 -- JG Dealerships
 -----------------
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `financed` tinyint(1) NOT NULL DEFAULT 0;
-ALTER TABLE `owned_vehicles` ADD COLUMN IF NOT EXISTS `finance_data` longtext DEFAULT NULL;
 
 CREATE TABLE IF NOT EXISTS `dealership_data` (
   `name` varchar(100) NOT NULL,
