@@ -46,7 +46,6 @@ CREATE TABLE IF NOT EXISTS `player_priv_garages` (
 );
 
 -- JG Dealerships
------------------
 
 CREATE TABLE IF NOT EXISTS `dealership_data` (
   `name` varchar(100) NOT NULL,
@@ -132,7 +131,7 @@ CREATE TABLE IF NOT EXISTS `dealership_employees` (
 );
 
 -- OX Doorlock
---------------
+
 CREATE TABLE IF NOT EXISTS `ox_doorlock` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -158,7 +157,7 @@ INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 
 
 -- Add Vehicle category - CUSTOMS
----------------------------------
+
 CREATE TABLE IF NOT EXISTS `vehicle_categories` (
   `name` varchar(60) NOT NULL,
   `label` varchar(60) NOT NULL,
@@ -182,7 +181,7 @@ INSERT INTO `vehicle_categories` (`name`, `label`) VALUES
 
 
 -- Licences SQL Injection
--------------------------
+
 CREATE TABLE IF NOT EXISTS `licenses` (
   `type` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
   `label` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -210,7 +209,7 @@ INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
 	('saunderscycles', 'Saunders Cycles', 0);
 
 -- Install JOBGRADES & Payrate Changes 
---------------------------------------
+
 CREATE TABLE IF NOT EXISTS `job_grades` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `job_name` varchar(50) DEFAULT NULL,
@@ -276,7 +275,7 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 	(59, 'foximports', 4, 'boss', 'Owner', 175, '{}', '{}');
 
 -- Install Player Starterpack table
------------------------------------
+
 CREATE TABLE IF NOT EXISTS `tcd_starterpack` (
   `id` int AUTO_INCREMENT PRIMARY KEY,
   `identifier` varchar(255) DEFAULT NULL,
@@ -291,7 +290,7 @@ CREATE TABLE IF NOT EXISTS `tcd_starterpack` (
 --) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- IT_Drugs SQL Injection
-  -- Install the drug_plants table
+
   CREATE TABLE IF NOT EXISTS drug_plants (
       id VARCHAR(11) NOT NULL, PRIMARY KEY(id),
       owner LONGTEXT DEFAULT NULL,
@@ -303,8 +302,7 @@ CREATE TABLE IF NOT EXISTS `tcd_starterpack` (
       water DOUBLE NOT NULL DEFAULT 0,
       growtime INT(11) NOT NULL
   );
- 
-  -- Install the drug_processing table
+
   CREATE TABLE IF NOT EXISTS drug_processing (
       id VARCHAR(11) NOT NULL, PRIMARY KEY(id),
       coords LONGTEXT NOT NULL,
@@ -314,5 +312,6 @@ CREATE TABLE IF NOT EXISTS `tcd_starterpack` (
   );
 
   -- Install User Licenses table
+
 INSERT INTO `user_licenses` (`id`, `type`, `owner`) VALUES
 	(1, 'dmv', 'char1:fb9c4a422321aaa6e257f2921ad70936f014c5cc');
