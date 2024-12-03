@@ -424,7 +424,7 @@ tasks:
     seconds: 3
   
   - action: query_database
-    file: ./recipe/Extras/vehicles-456-total.sql
+    file: ./recipe/Extras/vehicles-472-total.sql
 
   - action: waste_time # prevent SQL throttling
     seconds: 5
