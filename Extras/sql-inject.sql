@@ -1,5 +1,5 @@
 -- JG Advance Garages
----------------------
+
 -- playerowned_vehicles
 CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   `owner` varchar(60) DEFAULT NULL,
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   `financed` tinyint(1) NOT NULL DEFAULT 0,
   `finance_data` longtext DEFAULT NULL,
   PRIMARY KEY (`plate`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+);
 
 CREATE TABLE IF NOT EXISTS `player_priv_garages` (
     `id` INT(11) unsigned NOT NULL AUTO_INCREMENT,
