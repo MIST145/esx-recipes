@@ -287,7 +287,7 @@ CREATE TABLE IF NOT EXISTS `tcd_starterpack` (
 -- CREATE TABLE IF NOT EXISTS `owned_vehicles` (
 --  `datetimein` INT DEFAULT 0,
 --  PRIMARY KEY (`id`)
---) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+--);
 
 -- IT_Drugs SQL Injection
 
