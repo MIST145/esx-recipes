@@ -1,4 +1,3 @@
--- Dumping structure for table streetliferp.vehicles
 CREATE TABLE IF NOT EXISTS `vehicles` (
   `name` varchar(60) NOT NULL,
   `model` varchar(60) NOT NULL,
@@ -6,7 +5,7 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
   `category` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table streetliferp.vehicles: ~456 rows (approximately)
+-- Dumping data for table streetliferpesxlegacy-recipetestbuild_2969d3.vehicles: ~472 rows (approximately)
 INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	('Adder', 'adder', 351200, 'super'),
 	('Akuma', 'akuma', 19850, 'motorcycles'),
@@ -463,7 +462,8 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	('Buffalo EVX', 'buffalo5', 172950, 'sports'),
 	('La Coureuse', 'coureur', 139300, 'sports'),
 	('Bravado Hotring Hellfire', 'gauntlet6', 95000, 'muscle'),
--- Boats Insert bellow
+	
+	--BOATS Inserted Below
 	('Seashark', 'seashark', 9200, 'boats'),
 	('dinghy 2seat', 'dinghy2', 16850, 'boats'),
 	('dinghy 4seat', 'dinghy', 21750, 'boats'),
