@@ -234,12 +234,12 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/wasabi_backpack
     ref: main
-    dest: ./resources/[esx_extras]/wasabi_backpack
+    dest: ./resources/[esx_addons]/wasabi_backpack
 
   - action: download_github
     src: https://github.com/DonStylz74/tcd-starterpack
     ref: main
-    dest: ./resources/[esx_extras]/tcd-starterpack
+    dest: ./resources/[esx_addons]/tcd-starterpack
 
   - action: download_file
     path: ./tmp/bl_idcard.zip
@@ -251,7 +251,7 @@ tasks:
   - action: download_github
     src: https://github.com/DonStylz74/LGF_PauseMenu
     ref: main
-    dest: ./resources/[standalone]/LGF_PauseMenu
+    dest: ./resources/[esx_addons]/LGF_PauseMenu
 
   - action: download_github
     src: https://github.com/DonStylz74/vehiclehandler
@@ -259,9 +259,9 @@ tasks:
     dest: ./resources/[standalone]/vehiclehandler
 
   - action: download_github
-    src: https://github.com/DonStylz74/wp-seats
-    ref: main
-    dest: ./resources/[standalone]/wp-seats
+    src: https://github.com/DonStylz74/nv_sit_on_every_chair
+    ref: v1.1
+    dest: ./resources/[standalone]/nv_sit_on_every_chair
 
   - action: download_github
     src: https://github.com/DonStylz74/5m-Elevator
@@ -273,9 +273,14 @@ tasks:
     ref: main
     dest: ./resources/[standalone]/customplates
 
+  - action: download_github
+    src: https://github.com/DonStylz74/OT_pushvehicle
+    ref: main
+    dest: ./resources/[standalone]/OT_pushvehicle
+
   - action: download_file
     path: ./tmp/Renewed-Banking.zip
-    url:  https://github.com/Renewed-Scripts/Renewed-Banking/releases/download/v2.0.2/Renewed-Banking.zip
+    url:  https://github.com/Renewed-Scripts/Renewed-Banking/releases/download/v2.1.3/Renewed-Banking.zip
   - action: unzip
     dest: ./resources/[standalone]
     src: ./tmp/Renewed-Banking.zip
@@ -364,10 +369,10 @@ tasks:
 
 
   ## Server MAPPING
-  - action: download_github
-    src: https://github.com/DonStylz74/electric-chargers
-    ref: main
-    dest: ./resources/[mapping]/[enviro]/electric-chargers
+  #- action: download_github
+  #  src: https://github.com/DonStylz74/electric-chargers
+  #  ref: main
+  #  dest: ./resources/[mapping]/[enviro]/electric-chargers
 
   - action: download_github
     src: https://github.com/DonStylz74/ku_ltd_retexture/tree/main/ku_ltd_retexture
