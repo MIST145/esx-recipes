@@ -131,15 +131,16 @@ INSERT INTO `ox_doorlock` (`id`, `name`, `data`) VALUES
 	(2, 'PDM RH Main 2', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"doors":[{"model":-1152174184,"coords":{"x":-1261.8756103515626,"y":-349.6961975097656,"z":37.11116027832031},"heading":207},{"model":73386408,"coords":{"x":-1259.59130859375,"y":-348.5322570800781,"z":37.11116027832031},"heading":207}],"coords":{"x":-1260.7333984375,"y":-349.1142272949219,"z":37.11116027832031},"lockSound":"door_bolt","groups":{"pdmrockford":1},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}'),
 	(3, 'PDM RH Garage', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"heading":207,"doors":false,"coords":{"x":-1237.8436279296876,"y":-338.19476318359377,"z":37.60726928710937},"autolock":10,"lockSound":"metal_locker","groups":{"pdmrockford":1},"unlockSound":"door_bolt","model":1430328167,"maxDistance":5,"lockpick":true,"doorRate":0.2,"holdOpen":true}'),
 	(4, 'PDM RH Office', '{"lockpickDifficulty":["easy","easy","medium"],"state":1,"heading":298,"doors":false,"coords":{"x":-1243.94775390625,"y":-346.8536071777344,"z":37.47900009155273},"autolock":5,"lockSound":"metal_locker","groups":{"pdmrockford":2},"unlockSound":"metallic_creak","model":-952356348,"maxDistance":1,"lockpick":true}'),
-	(6, 'PDM PB Main 1', '{"maxDistance":1,"state":0,"lockpick":true,"lockpickDifficulty":["easy","easy","easy","easy","easy"],"unlockSound":"door_bolt","coords":{"x":-247.210205078125,"y":6213.57275390625,"z":32.14298629760742},"lockSound":"door_bolt","doors":[{"model":1417577297,"heading":315,"coords":{"x":-246.5340118408203,"y":6212.89501953125,"z":32.14588165283203}},{"model":2059227086,"heading":315,"coords":{"x":-247.8863983154297,"y":6214.25048828125,"z":32.14009094238281}}]}'),
+	(6, 'PDM PB Main 1', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"doors":[{"heading":315,"coords":{"x":-246.5340118408203,"y":6212.89501953125,"z":32.14588165283203},"model":1417577297},{"heading":315,"coords":{"x":-247.8863983154297,"y":6214.25048828125,"z":32.14009094238281},"model":2059227086}],"maxDistance":1,"coords":{"x":-247.210205078125,"y":6213.57275390625,"z":32.14298629760742},"lockpick":true,"state":1,"lockSound":"door_bolt","groups":{"pdmpaletobay":1},"unlockSound":"door_bolt"}'),
 	(7, 'PDM PB Main 2', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"doors":[{"model":-2050436002,"coords":{"x":-229.76853942871095,"y":6216.2626953125,"z":32.4075698852539},"heading":315},{"model":100848840,"coords":{"x":-228.24365234375,"y":6214.73779296875,"z":32.4075698852539},"heading":315}],"coords":{"x":-229.006103515625,"y":6215.5,"z":32.4075698852539},"lockSound":"door_bolt","groups":{"pdmpaletobay":1},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}'),
-	(8, 'PDM PB Main 3', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"doors":[{"model":100848840,"coords":{"x":-227.233642578125,"y":6219.71923828125,"z":32.20662689208984},"heading":227},{"model":-2050436002,"coords":{"x":-225.76284790039063,"y":6221.29638671875,"z":32.20662689208984},"heading":227}],"coords":{"x":-226.4982452392578,"y":6220.5078125,"z":32.20662689208984},"lockSound":"door_bolt","groups":{"pdmpaletobay":1},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}'),
+	(8, 'PDM PB Main 3', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"doors":[{"heading":227,"coords":{"x":-227.233642578125,"y":6219.71923828125,"z":32.20662689208984},"model":100848840},{"heading":227,"coords":{"x":-225.76284790039063,"y":6221.29638671875,"z":32.20662689208984},"model":-2050436002}],"maxDistance":1,"coords":{"x":-226.4982452392578,"y":6220.5078125,"z":32.20662689208984},"autolock":10,"lockpick":true,"state":1,"lockSound":"door_bolt","groups":{"pdmpaletobay":1},"unlockSound":"door_bolt"}'),
 	(10, 'PDM PB Garage', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"heading":224,"doors":false,"coords":{"x":-236.80198669433595,"y":6228.22607421875,"z":32.26290512084961},"autolock":10,"lockSound":"metal_locker","groups":{"pdmpaletobay":1},"unlockSound":"door_bolt","model":354430864,"maxDistance":5,"lockpick":true,"doorRate":0.2,"holdOpen":true}'),
 	(11, 'PDM PB Office', '{"lockpickDifficulty":["easy","easy","medium"],"state":1,"heading":225,"doors":false,"coords":{"x":-222.48281860351563,"y":6220.31787109375,"z":32.20540618896484},"autolock":5,"lockSound":"metal_locker","groups":{"pdmrockford":2},"unlockSound":"metallic_creak","model":100848840,"maxDistance":1,"lockpick":true}'),
-	(12, 'PDMMechDevider', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"state":1,"holdOpen":true,"doors":[{"model":100848840,"coords":{"x":-227.07333374023438,"y":6228.265625,"z":32.20662689208984},"heading":316},{"model":-2050436002,"coords":{"x":-228.62588500976563,"y":6229.765625,"z":32.20662689208984},"heading":316}],"coords":{"x":-227.849609375,"y":6229.015625,"z":32.20662689208984},"autolock":5,"lockSound":"door_bolt","groups":{"pdmrpaletobay":4},"unlockSound":"door_bolt","maxDistance":1,"lockpick":true}'),
-	(13, 'PDM PH Main', '{"lockSound":"door_bolt","unlockSound":"door_bolt","lockpick":true,"state":1,"doors":[{"model":-2052973320,"coords":{"x":-39.20265579223633,"y":-1107.82958984375,"z":26.73880195617675},"heading":160},{"model":212937492,"coords":{"x":-37.38660430908203,"y":-1108.4906005859376,"z":26.73880195617675},"heading":340}],"lockpickDifficulty":["easy","easy","easy","easy","easy"],"maxDistance":1,"coords":{"x":-38.29463195800781,"y":-1108.16015625,"z":26.73880195617675},"groups":{"pdmpillbox":0}}'),
-	(15, 'PDM PH Garage', '{"groups":{"pdmpillbox":0},"lockpick":true,"coords":{"x":-53.56601333618164,"y":-1101.961669921875,"z":25.4862117767334},"lockSound":"metal_locker","maxDistance":5,"lockpickDifficulty":["easy","easy","easy","easy","easy"],"autolock":10,"heading":340,"doors":false,"holdOpen":true,"doorRate":0.6,"unlockSound":"door_bolt","state":1,"model":1871067447}');
-
+	(12, 'PDMMechDevider', '{"lockpickDifficulty":["easy","easy","easy","easy","easy"],"doors":[{"heading":316,"coords":{"x":-227.07333374023438,"y":6228.265625,"z":32.20662689208984},"model":100848840},{"heading":316,"coords":{"x":-228.62588500976563,"y":6229.765625,"z":32.20662689208984},"model":-2050436002}],"maxDistance":1,"coords":{"x":-227.849609375,"y":6229.015625,"z":32.20662689208984},"autolock":5,"lockpick":true,"holdOpen":true,"lockSound":"door_bolt","groups":{"pdmrpaletobay":3},"unlockSound":"door_bolt","state":1}'),
+	(13, 'PDM PB Main', '{"lockSound":"door_bolt","unlockSound":"door_bolt","lockpick":true,"state":1,"doors":[{"model":-2052973320,"coords":{"x":-39.20265579223633,"y":-1107.82958984375,"z":26.73880195617675},"heading":160},{"model":212937492,"coords":{"x":-37.38660430908203,"y":-1108.4906005859376,"z":26.73880195617675},"heading":340}],"lockpickDifficulty":["easy","easy","easy","easy","easy"],"maxDistance":1,"coords":{"x":-38.29463195800781,"y":-1108.16015625,"z":26.73880195617675},"groups":{"pdmpillbox":0}}'),
+	(15, 'PDM PH Garage', '{"groups":{"pdmpillbox":0},"lockpick":true,"coords":{"x":-53.56601333618164,"y":-1101.961669921875,"z":25.4862117767334},"lockSound":"metal_locker","maxDistance":5,"lockpickDifficulty":["easy","easy","easy","easy","easy"],"autolock":10,"heading":340,"doors":false,"holdOpen":true,"doorRate":0.6,"unlockSound":"door_bolt","state":1,"model":1871067447}'),
+	(16, 'Fox Imports Main', '{"unlockSound":"door_bolt","coords":{"x":546.4442138671875,"y":-253.51318359375,"z":50.06281661987305},"lockSound":"door_bolt","state":1,"model":675021279,"groups":{"foximports":1},"doors":false,"lockpickDifficulty":["easy","easy","easy","easy","easy"],"maxDistance":1,"lockpick":true,"heading":110}'),
+	(17, 'Fox Imports Garage', '{"heading":65,"maxDistance":5,"auto":true,"unlockSound":"door_bolt","model":-1453542142,"autolock":10,"lockpickDifficulty":["easy","easy","easy","easy","easy"],"lockpick":true,"lockSound":"metal_locker","doors":false,"state":1,"doorRate":0.6,"groups":{"foximports":1},"coords":{"x":554.0410766601563,"y":-235.5026092529297,"z":49.0053825378418}}');
 
 
 -- Add Vehicle category - CUSTOMS
@@ -155,7 +156,7 @@ INSERT INTO `vehicle_categories` (`name`, `label`) VALUES
 	('compacts', 'Compacts'),
 	('coupes', 'Coupes'),
 	('customs', 'Customs'),
-	('motorcycles', 'Motos'),
+	('motorcycles', 'Motorcycles'),
 	('muscle', 'Muscle'),
 	('offroad', 'Off Road'),
 	('sedans', 'Sedans'),
@@ -191,6 +192,7 @@ INSERT INTO `jobs` (`name`, `label`, `whitelisted`) VALUES
 	('pdmpillbox', 'PDM Pillbox', 0),
 	('pdmrockford', 'PDM Rockford', 0),
 	('docktease', 'DockTease', 0),
+	('foximports', 'FOX Imports', 0),
 	('saunderscycles', 'Saunders Cycles', 0);
 
 -- Install JOBGRADES & Payrate Changes 
@@ -253,7 +255,11 @@ INSERT INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, 
 	(52, 'docktease', 1, 'sales', 'Salesman', 100, '{}', '{}'),
 	(53, 'docktease', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
 	(54, 'docktease', 3, 'manager', 'Manager', 150, '{}', '{}'),
-	(55, 'docktease', 4, 'boss', 'Owner', 175, '{}', '{}');
+	(55, 'docktease', 4, 'boss', 'Owner', 175, '{}', '{}'),
+	(56, 'foximports', 1, 'sales', 'Salesman', 100, '{}', '{}'),
+	(57, 'foximports', 2, 'supervisor', 'Supervisor', 125, '{}', '{}'),
+	(58, 'foximports', 3, 'manager', 'Manager', 150, '{}', '{}'),
+	(59, 'foximports', 4, 'boss', 'Owner', 175, '{}', '{}');
 
 -- Install Player Starterpack table
 -----------------------------------
@@ -292,3 +298,7 @@ CREATE TABLE IF NOT EXISTS `tcd_starterpack` (
       owner LONGTEXT NOT NULL,
       type VARCHAR(100) NOT NULL
   );
+
+  -- Install User Licenses table
+INSERT INTO `user_licenses` (`id`, `type`, `owner`) VALUES
+	(1, 'dmv', 'char1:fb9c4a422321aaa6e257f2921ad70936f014c5cc');
