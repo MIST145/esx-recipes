@@ -465,8 +465,8 @@ INSERT INTO `vehicles` (`name`, `model`, `price`, `category`) VALUES
 	
 	--BOATS Inserted Below
 	('Seashark', 'seashark', 9200, 'boats'),
-	('dinghy 2seat', 'dinghy2', 16850, 'boats'),
-	('dinghy 4seat', 'dinghy', 21750, 'boats'),
+	('dinghy 2seats', 'dinghy2', 16850, 'boats'),
+	('dinghy 4seats', 'dinghy', 21750, 'boats'),
 	('Marquis', 'marquis', 32750, 'boats'),
 	('Suntrap', 'suntrap', 35500, 'boats'),
 	('Tropic', 'tropic', 40250, 'boats'),
