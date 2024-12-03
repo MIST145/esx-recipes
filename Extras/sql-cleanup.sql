@@ -1,6 +1,9 @@
 -- Dropping job_grades table to UPDATE PAYS ETC.
 DROP TABLE `job_grades`;
 
+-- Dropping owned vehicles table to add JG Adv garages
+DROP TABLE `owned_vehicles`;
+
 -- Dropping vehicles table to add Extra Vehicles
 DROP TABLE `vehicles`;
 DROP TABLE `vehicle_categories`;
