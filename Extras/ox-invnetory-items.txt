@@ -740,6 +740,216 @@
 		}
 	},
 
+-----  Stevo ChopShop
+---------------------
+
+["car-door"] = {
+    label = "Car Door",
+    weight = 125,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Single Car Door",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-door.png"
+    }
+},
+
+["car-hood"] = {
+    label = "Car Hood",
+    weight = 150,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "A vehicle Hood",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-hood.png"
+    }
+},
+
+["car-trunk"] = {
+    label = "Car Trunk",
+    weight = 100,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Single Car Trunk",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-trunk.png"
+    }
+},
+
+["car-rim"] = {
+    label = "Car Rim",
+    weight = 100,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Single Car Rim",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-rim.png"
+    }
+},
+
+["car-tire"] = {
+    label = "Car Tire",
+    weight = 90,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Single Car Tire",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-tire.png"
+    }
+},
+
+["car-battery"] = {
+    label = "Car Battery",
+    weight = 100,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Lithium Car Battery",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-battery.png"
+    }
+},
+
+["car-radio"] = {
+    label = "Car Radio",
+    weight = 75,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Standard Car Radio",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-radio.png"
+    }
+},
+
+["car-speakers"] = {
+    label = "Car-Speakers",
+    weight = 125,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Standard Car Speakers",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-speakers.png"
+    }
+},
+
+["car-seat"] = {
+    label = "Car Seat",
+    weight = 85,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Single Car Seat",
+    server = {
+        export = ""
+    },
+    client = {
+        image = "car-seat.png"
+    }
+},
+
+["scrapmetal"] = {
+    label = "Scrap Metal",
+    weight = 100,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Peice of scrap Metal.",
+    client = {
+        image = "scrapmetal.png"
+    }
+},
+
+["scrapsteel"] = {
+    label = "Scrap Steel",
+    weight = 100,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Peice of Scrap Steel",
+    client = {
+        image = "scrapsteel.png"
+    }
+},
+
+["scrapelectronics"] = {
+    label = "Scrap Electronics",
+    weight = 75,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Peice of Scrap Electronics",
+    client = {
+        image = "scrapelectronics.png"
+    }
+},
+
+["scrapglass"] = {
+    label = "Scrap Glass",
+    weight = 80,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Peice of Scrap Glass",
+    client = {
+        image = "scrapglass.png"
+    }
+},
+
+["scrapplastic"] = {
+    label = "Scrap Plastic",
+    weight = 55,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Peice of Scrap Plastic",
+    client = {
+        image = "scrapplastic.png"
+    }
+},
+
+["scraprubber"] = {
+    label = "Scrap Rubber",
+    weight = 100,
+    stack = true,
+    close = false,
+    consume = 0,
+    description = "Peice of Scrap Rubber",
+    client = {
+        image = "scraprubber.png"
+    }
+},
+
 ----  BL IDCARD SCRIPT
 ----------------------
 	["id_card"] = {
